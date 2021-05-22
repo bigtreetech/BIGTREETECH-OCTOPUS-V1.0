@@ -36,6 +36,9 @@
 // USB Flash Drive support
 #define HAS_OTG_USB_HOST_SUPPORT
 
+// Avoid conflict with TIMER_TONE
+#define STEP_TIMER                            10
+
 //
 // Servos
 #define SERVO0_PIN                          PB6
@@ -140,13 +143,6 @@
 //
 #ifndef POWER_LOSS_PIN
   #define POWER_LOSS_PIN                    PC0   // PWRDET
-#endif
-
-//
-// NeoPixel LED
-//
-#ifndef NEOPIXEL_PIN
-  #define NEOPIXEL_PIN                      PB0
 #endif
 
 //
@@ -485,6 +481,13 @@
 
   #endif
 #endif  // HAS_WIRED_LCD
+
+//
+// NeoPixel LED
+//
+#ifndef NEOPIXEL_PIN
+  #define NEOPIXEL_PIN                      PB0
+#endif
 
 // Alter timing for graphical display
 #if HAS_MARLINUI_U8GLIB
