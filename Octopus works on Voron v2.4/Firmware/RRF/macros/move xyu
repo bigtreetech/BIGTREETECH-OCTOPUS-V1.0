@@ -1,0 +1,19 @@
+; move the hotend to 0,0
+G28 Y
+G28 X;
+G28 U;
+G1 X105 U70 F6000		; move sensor to center of the bed
+G1 Y150 F6000		; move sensor to center of the bed
+G1 U0 F6000
+G1 U70 F6000
+G1 X185 F6000
+G1 X105 F6000
+G1 Y50 F6000		; move sensor to center of the bed
+G1 Y100 F6000		; move sensor to center of the bed
+G1 X185 F6000		; move sensor to center of the bed
+G1 U0 F6000		; move sensor to center of the bed
+G1 X105 F6000		; move sensor to center of the bed
+G1 U70 F6000		; move sensor to center of the bed
+
+
+

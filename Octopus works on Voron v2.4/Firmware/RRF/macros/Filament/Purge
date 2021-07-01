@@ -1,0 +1,12 @@
+;purge hotend
+M291 P"purge started !" R"purging.." S1 T2 	; display msg
+G1 Z10 F3000 					; move z up little to prevent scratching of surface
+G1 X5 Y70 Z0.3 F5000.0				; move to start-line position
+G1 Z0.3 F1000 					; print height
+G1 X5 Y220 F1500.0 E15 				; draw 1st line
+G1 X5.2 Y220 Z0.3 F5000.0			; move to side a little
+G1 X5.2 Y70 Z0.3 F1500.0 E30 			; draw 2nd line
+;G1 E-1 F2000					; Retract 1mm filament
+G1 Z10 F3000 					; move z up little to prevent scratching of surface
+G1 X150 Y150 F6000 				; move to center of the bed
+M291 P"purge finished !" R"purging.." S1 T2 	; display msg

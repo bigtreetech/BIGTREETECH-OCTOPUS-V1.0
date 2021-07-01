@@ -1,0 +1,22 @@
+; Manual unload PLA filament
+G1 E-5 F500
+G1 E-500 F3600
+
+M291 P"Please wait while the nozzle is being heated up" R"Manual PLA unload" S0 T0 ; Display message
+G10 S195 ; Heat up the current tool to 195C
+M116 ; Wait for the temperatures to be reached to 195C
+M291 P"extruding 20mm filament" R"Manual PLA unload" S0 T5 ; Display another message
+G1 E20 F300 ; extrude 20mm of filament at 300mm/min
+M400 ; Wait for the moves to finish
+M291 P"please clean the hotend, then press OK" R"Manual PLA unload" T0 S3
+M291 P"Wait for the temperatures to be reached to 90C" R"Manual PLA unload" S0 T5 ; Display another message
+G10 S90 ; Heat up the current tool to 90C
+M116 ; Wait for the temperatures to be reached to 90C
+M84 E0:1 ; Turn off extruder drives 1 and 2
+M291 P"Please pull the filament from the print head fast, then press PK." R"Manual PLA unload" T0 S3
+M291 P"would you like to load a new filament?" R"Manual PLA unload" T0 S3
+M291 P"Please wait while the nozzle is being heated up" R"Manual PLA unload" S0 T0 ; Display message
+G10 S195 ; Heat up the current tool to 195C
+M116 ; Wait for the temperatures to be reached to 195C
+M291 P"extruding 50mm filament" R"Manual PLA unload" S0 T5 ; Display another message
+G1 E50 F300 ; extrude 20mm of filament at 300mm/min

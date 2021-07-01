@@ -1,0 +1,34 @@
+// Board Hardware configuration file for BTT OctoPus V1
+
+//Note: Each line should be less than 120 characters.
+//    : Unwanted options can be commented out or set to NoPin. Lines commented out will get default values
+//    : for pins the default is NoPin.
+//    : Values for Arrays need to be contained within { and }
+//    : Comments can be defined with // or # (comments are not supported inside arrays)
+//    : Each config entry must be all on a single line.
+
+lpc.board = btt_octopus_v1; 
+
+//Internal SDCard SPI Frequency.
+lpc.internalSDCard.spiFrequencyHz  = 25000000;
+	 
+//Analogue to Digital prefilter
+adc.prefilter.enable = true
+
+	//ESP Settings
+8266wifi.espDataReadyPin = D.7;
+8266wifi.lpcTfrReadyPin = D.10;
+8266wifi.espResetPin = G.7;
+		//ESP RX/TX Settings
+8266wifi.serialRxTxPins = { PD_9, PD_8 } ;
+																																			//TMC Smart Drivers
+stepper.numSmartDrivers = 8;
+
+// External Display settings
+serial.aux.rxTxPins = {PA_10, PA_9};
+
+atx.powerPin = E.11;
+atx.powerPinInverted = false
+led.neopixelPin = B.0;
+//LED blinks to indicate Platform is spinning or other diagnostic 
+leds.diagnostic = A.13;

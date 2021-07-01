@@ -1,0 +1,17 @@
+; Z calibration with IR mini sensor
+
+M291 P"Starting z calibration" R"Z calibration" S0 T2
+M291 P"Homing all axiss" R"Z calibration" S0 T10
+G28						; Home all axis
+M291 P"put a paper under the hotend and jog until it touches the paper. Hit OK when finished" R"Z calibration" Z1 T0 S3
+M291 P"setting this position as z=0" R"Z calibration" S0 T2
+G92 Z0						; define this position as Z0
+M291 P"moving Z up 5mm" R"Z calibration" S3 T0
+G1 Z5 F3000 					; move z up 5mm
+M291 P"Probing Z position" R"Z calibration" S3 T0
+G30 S-1						; probing the Z position
+M291 P"go to console and copy the z value to config.g" R"Z calibration" S0 T5
+M291 P1 R"Z calibration" S1 T0
+; write down the z position
+
+
