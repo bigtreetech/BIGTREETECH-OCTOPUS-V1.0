@@ -7,6 +7,25 @@
 
 <img align="right" width=175 src="buildroot/share/pixmaps/logo/marlin-250.png" />
 
+# How octoprint communicates with Marlin through UART
+### Hardware wiring diagram
+
+* If you use octoprint on raspberry pi and want to communicate with the motherboard through UART, the hardware connection is shown in the figure [here](https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-V1.0/tree/master/Firmware/Klipper#raspberry-pi-is-powered-by-the-motherboard-5v-and-communicates-with-the-motherboard-via-uart)
+
+### Marlin configuration
+* You need to enable the USART2 as the hardware serial port to communicate with raspberry pi. The USART2 is enabled by default and the baudrate is set to 115200 in this repository. `#define SERIAL_PORT_3 2`
+
+### Raspberry pi configuration
+* You need to modify the following files by inserting the SD card into the computer or by SSH command
+  * Remove `console=serial0,115200` in `/boot/cmdline.txt`
+  * Add `dtoverlay=pi3-miniuart-bt` at the end of file `/boot/config.txt`
+* Add `/dev/ttyAMA0` in `OctoPrint Settings->Serial Connection->General->Connection->Additional serial ports`.
+* Use `/dev/ttyAMA0` to connect the motherboard at baudrate = 115200
+
+### You can refer to the video [here](https://www.youtube.com/watch?v=Du0-Ka2srIg) to set up raspberry pi for UART
+
+<br/><br/><br/>
+
 Additional documentation can be found at the [Marlin Home Page](https://marlinfw.org/).
 Please test this firmware and let us know if it misbehaves in any way. Volunteers are standing by!
 
