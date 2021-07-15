@@ -1,0 +1,727 @@
+<?xml version='1.0' encoding='ASCII'?>
+<package xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.3" xs:schemaLocation="http://www.atmel.com/schemas/pack-device-atmel-extension PACK.DEVICE.ATMEL.EXTENSION.xsd" xs:noNamespaceSchemaLocation="PACK.xsd">
+   <vendor>Atmel</vendor>
+   <url>http://packs.download.atmel.com/</url>
+   <name>SAME51_DFP</name>
+   <description>Atmel SAME51 Series Device Support</description>
+   <releases>
+      <release version="1.1.139" date="2019-11-05">Support for ATSAME51G18A and ATSAME51G19A</release>
+      <release version="1.1.129" date="2019-04-09">Fix: Modes in SVD, Value-group for USER_FUSES, define in GCLK. Added python programming and debugging scripts for MPLAB X.</release>
+      <release version="1.0.85">Added ATSAME51J20A. Aligned PTC signal description with other SAM DFPs.</release>
+      <release version="1.0.56">Initial version.</release>
+   </releases>
+   <keywords>
+      <keyword>Atmel</keyword>
+      <keyword>Device Family Package Atmel</keyword>
+      <keyword>Device Support</keyword>
+      <keyword>SAME51</keyword>
+   </keywords>
+   <devices>
+      <family Dfamily="SAME51" Dvendor="Atmel:3">
+         <environment name="microchip">
+            <mchp:extension xmlns:mchp="http://crownking/pack-device-microchip-extension" schemaVersion="1.0">
+               <mchp:prerequisite component="MPLAB X IDE" version="[5.10-"/>
+            </mchp:extension>
+         </environment>
+         <device Dname="ATSAME51J19A">
+            <processor Dcore="Cortex-M4" Dendian="Little-endian" Dmpu="MPU" Dfpu="SP_FPU"/>
+            <compile header="include/sam.h" define="__SAME51J19A__"/>
+            <debug svd="svd/ATSAME51J19A.svd"/>
+            <memory id="IROM1" start="0x00000000" size="0x80000" default="1" startup="1"/>
+            <memory id="IRAM1" start="0x20000000" size="0x30000" default="1"/>
+            <memory id="IRAM2" start="0x20000000" size="0x8000"/>
+            <memory id="IRAM3" start="0x20000000" size="0x8000"/>
+            <memory id="IRAM4" start="0x47000000" size="0x2000"/>
+            <algorithm name="keil/arm_addon/flash/ATSAME51_512.FLM" start="0x00000000" size="0x80000" default="1"/>
+            <environment name="atmel">
+               <at:extension xmlns:at="http://www.atmel.com/schemas/pack-device-atmel-extension" schemaVersion="1.0">
+                  <at:atdf name="atdf/ATSAME51J19A.atdf"/>
+                  <at:variant ordercode="SAME51J19A-MU" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="85"/>
+                  <at:variant ordercode="SAME51J19A-MF" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="125"/>
+                  <at:variant ordercode="SAME51J19A-MZ" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="125"/>
+                  <at:variant ordercode="SAME51J19A-AU" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="85"/>
+                  <at:variant ordercode="SAME51J19A-AF" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="125"/>
+                  <at:variant ordercode="SAME51J19A-AZ" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="125"/>
+                  <at:memory name="FLASH" start="0x00000000" size="0x80000" type="flash" pagesize="512" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="SW0" start="0x00800080" size="0x10" type="fuses" rw="R" address-space="base"/>
+                  <at:memory name="TEMP_LOG" start="0x00800100" size="0x200" type="fuses" pagesize="512" rw="RW" address-space="base"/>
+                  <at:memory name="USER_PAGE" start="0x00804000" size="0x200" type="user_page" pagesize="512" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC" start="0x03000000" size="0x1000000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC_DATARAM" start="0x3000000" size="0x1000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC_TAGRAM" start="0x3001000" size="0x400" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC_VALIDRAM" start="0x3002000" size="0x40" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="QSPI" start="0x04000000" size="0x1000000" type="other" rw="RW" exec="true" external="true" address-space="base"/>
+                  <at:memory name="HSRAM" start="0x20000000" size="0x30000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="HSRAM_ETB" start="0x20000000" size="0x8000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="HSRAM_RET1" start="0x20000000" size="0x8000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="HPB0" start="0x40000000" size="0x4400" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="HPB1" start="0x41000000" size="0x22000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="HPB2" start="0x42000000" size="0x3C00" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="HPB3" start="0x43000000" size="0x3000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="SEEPROM" start="0x44000000" size="0x20000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="SDHC0" start="0x45000000" size="0xC00" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="BKUPRAM" start="0x47000000" size="0x2000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="PPB" start="0xE0000000" size="0x100000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="SCS" start="0xE000E000" size="0x00001000" type="io" rw="RW" address-space="base"/>
+                  <at:interface type="swd" name="SWD"/>
+                  <at:tool id="com.atmel.avrdbg.tool.medbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.atmelice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.pickit4"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemk3"/>
+                  <at:tool id="com.atmel.avrdbg.tool.samice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.snap"/>
+                  <at:tool id="com.atmel.avrdbg.tool.nedbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbgc"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagice3plus"/>
+                  <at:tool id="com.atmel.avrdbg.tool.powerdebugger"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:project name="Barebone C Project">
+                     <at:component Cvendor="ARM" Cclass="CMSIS" Cgroup="CORE"/>
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.c)"/>
+                     </at:component>
+                  </at:project>
+                  <at:project name="Barebone Cpp Project">
+                     <at:component Cvendor="ARM" Cclass="CMSIS" Cgroup="CORE"/>
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.cpp)"/>
+                     </at:component>
+                  </at:project>
+                  <at:prerequisite context="compiling" Tcompiler="GCC" component="ARM-GCC"/>
+                  <at:prerequisite context="compiling" Tcompiler="IAR" component="ARM-IAR"/>
+                  <at:prerequisite context="compiling" Tcompiler="ARMCC" component="ARMCC"/>
+               </at:extension>
+            </environment>
+            <book name="https://www.microchip.com/wwwproducts/Devices.aspx?product=ATSAME51J19A" title="Device page for ATSAME51J19A"/>
+            <book name="https://www.microchip.com/wwwproducts/productds/ATSAME51J19A" title="Datasheet"/>
+         </device>
+         <device Dname="ATSAME51J20A">
+            <processor Dcore="Cortex-M4" Dendian="Little-endian" Dmpu="MPU" Dfpu="SP_FPU"/>
+            <compile header="include/sam.h" define="__SAME51J20A__"/>
+            <debug svd="svd/ATSAME51J20A.svd"/>
+            <memory id="IROM1" start="0x00000000" size="0x100000" default="1" startup="1"/>
+            <memory id="IRAM1" start="0x20000000" size="0x40000" default="1"/>
+            <memory id="IRAM2" start="0x20000000" size="0x8000"/>
+            <memory id="IRAM3" start="0x20000000" size="0x8000"/>
+            <memory id="IRAM4" start="0x47000000" size="0x2000"/>
+            <environment name="atmel">
+               <at:extension xmlns:at="http://www.atmel.com/schemas/pack-device-atmel-extension" schemaVersion="1.0">
+                  <at:atdf name="atdf/ATSAME51J20A.atdf"/>
+                  <at:variant ordercode="SAME51J20A-MU" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="85"/>
+                  <at:variant ordercode="SAME51J20A-MF" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="125"/>
+                  <at:variant ordercode="SAME51J20A-MZ" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="125"/>
+                  <at:variant ordercode="SAME51J20A-AU" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="85"/>
+                  <at:variant ordercode="SAME51J20A-AF" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="125"/>
+                  <at:variant ordercode="SAME51J20A-AZ" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="125"/>
+                  <at:memory name="FLASH" start="0x00000000" size="0x100000" type="flash" pagesize="512" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="SW0" start="0x00800080" size="0x10" type="fuses" rw="R" address-space="base"/>
+                  <at:memory name="TEMP_LOG" start="0x00800100" size="0x200" type="fuses" pagesize="512" rw="RW" address-space="base"/>
+                  <at:memory name="USER_PAGE" start="0x00804000" size="0x200" type="user_page" pagesize="512" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC" start="0x03000000" size="0x1000000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC_DATARAM" start="0x3000000" size="0x1000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC_TAGRAM" start="0x3001000" size="0x400" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC_VALIDRAM" start="0x3002000" size="0x40" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="QSPI" start="0x04000000" size="0x1000000" type="other" rw="RW" exec="true" external="true" address-space="base"/>
+                  <at:memory name="HSRAM" start="0x20000000" size="0x40000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="HSRAM_ETB" start="0x20000000" size="0x8000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="HSRAM_RET1" start="0x20000000" size="0x8000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="HPB0" start="0x40000000" size="0x4400" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="HPB1" start="0x41000000" size="0x22000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="HPB2" start="0x42000000" size="0x3C00" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="HPB3" start="0x43000000" size="0x3000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="SEEPROM" start="0x44000000" size="0x20000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="SDHC0" start="0x45000000" size="0xC00" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="BKUPRAM" start="0x47000000" size="0x2000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="PPB" start="0xE0000000" size="0x100000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="SCS" start="0xE000E000" size="0x00001000" type="io" rw="RW" address-space="base"/>
+                  <at:interface type="swd" name="SWD"/>
+                  <at:tool id="com.atmel.avrdbg.tool.medbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.atmelice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.pickit4"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemk3"/>
+                  <at:tool id="com.atmel.avrdbg.tool.samice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.snap"/>
+                  <at:tool id="com.atmel.avrdbg.tool.nedbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbgc"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagice3plus"/>
+                  <at:tool id="com.atmel.avrdbg.tool.powerdebugger"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:project name="Barebone C Project">
+                     <at:component Cvendor="ARM" Cclass="CMSIS" Cgroup="CORE"/>
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.c)"/>
+                     </at:component>
+                  </at:project>
+                  <at:project name="Barebone Cpp Project">
+                     <at:component Cvendor="ARM" Cclass="CMSIS" Cgroup="CORE"/>
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.cpp)"/>
+                     </at:component>
+                  </at:project>
+                  <at:prerequisite context="compiling" Tcompiler="GCC" component="ARM-GCC"/>
+                  <at:prerequisite context="compiling" Tcompiler="IAR" component="ARM-IAR"/>
+               </at:extension>
+            </environment>
+            <book name="https://www.microchip.com/wwwproducts/Devices.aspx?product=ATSAME51J20A" title="Device page for ATSAME51J20A"/>
+            <book name="https://www.microchip.com/wwwproducts/productds/ATSAME51J20A" title="Datasheet"/>
+         </device>
+         <device Dname="ATSAME51G19A">
+            <processor Dcore="Cortex-M4" Dendian="Little-endian" Dmpu="MPU" Dfpu="SP_FPU"/>
+            <compile header="include/sam.h" define="__SAME51G19A__"/>
+            <debug svd="svd/ATSAME51G19A.svd"/>
+            <memory id="IROM1" start="0x00000000" size="0x80000" default="1" startup="1"/>
+            <memory id="IRAM1" start="0x20000000" size="0x30000" default="1"/>
+            <memory id="IRAM2" start="0x20000000" size="0x8000"/>
+            <memory id="IRAM3" start="0x20000000" size="0x8000"/>
+            <memory id="IRAM4" start="0x47000000" size="0x2000"/>
+            <environment name="atmel">
+               <at:extension xmlns:at="http://www.atmel.com/schemas/pack-device-atmel-extension" schemaVersion="1.0">
+                  <at:atdf name="atdf/ATSAME51G19A.atdf"/>
+                  <at:variant ordercode="SAME51G19A-MU" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="85"/>
+                  <at:variant ordercode="SAME51G19A-MF" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="125"/>
+                  <at:variant ordercode="SAME51G19A-MZ" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="125"/>
+                  <at:memory name="FLASH" start="0x00000000" size="0x80000" type="flash" pagesize="512" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="SW0" start="0x00800080" size="0x10" type="fuses" rw="R" address-space="base"/>
+                  <at:memory name="TEMP_LOG" start="0x00800100" size="0x200" type="fuses" pagesize="512" rw="RW" address-space="base"/>
+                  <at:memory name="USER_PAGE" start="0x00804000" size="0x200" type="user_page" pagesize="512" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC" start="0x03000000" size="0x1000000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC_DATARAM" start="0x3000000" size="0x1000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC_TAGRAM" start="0x3001000" size="0x400" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC_VALIDRAM" start="0x3002000" size="0x40" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="QSPI" start="0x04000000" size="0x1000000" type="other" rw="RW" exec="true" external="true" address-space="base"/>
+                  <at:memory name="HSRAM" start="0x20000000" size="0x30000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="HSRAM_ETB" start="0x20000000" size="0x8000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="HSRAM_RET1" start="0x20000000" size="0x8000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="HPB0" start="0x40000000" size="0x4400" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="HPB1" start="0x41000000" size="0x22000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="HPB2" start="0x42000000" size="0x3C00" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="HPB3" start="0x43000000" size="0x3000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="SEEPROM" start="0x44000000" size="0x20000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="SDHC0" start="0x45000000" size="0xC00" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="BKUPRAM" start="0x47000000" size="0x2000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="PPB" start="0xE0000000" size="0x100000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="SCS" start="0xE000E000" size="0x00001000" type="io" rw="RW" address-space="base"/>
+                  <at:interface type="swd" name="SWD"/>
+                  <at:tool id="com.atmel.avrdbg.tool.medbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.atmelice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.pickit4"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemk3"/>
+                  <at:tool id="com.atmel.avrdbg.tool.samice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.snap"/>
+                  <at:tool id="com.atmel.avrdbg.tool.nedbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbgc"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagice3plus"/>
+                  <at:tool id="com.atmel.avrdbg.tool.powerdebugger"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:project name="Barebone C Project">
+                     <at:component Cvendor="ARM" Cclass="CMSIS" Cgroup="CORE"/>
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.c)"/>
+                     </at:component>
+                  </at:project>
+                  <at:project name="Barebone Cpp Project">
+                     <at:component Cvendor="ARM" Cclass="CMSIS" Cgroup="CORE"/>
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.cpp)"/>
+                     </at:component>
+                  </at:project>
+                  <at:prerequisite context="compiling" Tcompiler="GCC" component="ARM-GCC"/>
+                  <at:prerequisite context="compiling" Tcompiler="IAR" component="ARM-IAR"/>
+               </at:extension>
+            </environment>
+            <book name="https://www.microchip.com/wwwproducts/Devices.aspx?product=ATSAME51G19A" title="Device page for ATSAME51G19A"/>
+            <book name="https://www.microchip.com/wwwproducts/productds/ATSAME51G19A" title="Datasheet"/>
+         </device>
+         <device Dname="ATSAME51G18A">
+            <processor Dcore="Cortex-M4" Dendian="Little-endian" Dmpu="MPU" Dfpu="SP_FPU"/>
+            <compile header="include/sam.h" define="__SAME51G18A__"/>
+            <debug svd="svd/ATSAME51G18A.svd"/>
+            <memory id="IROM1" start="0x00000000" size="0x40000" default="1" startup="1"/>
+            <memory id="IRAM1" start="0x20000000" size="0x20000" default="1"/>
+            <memory id="IRAM2" start="0x20000000" size="0x8000"/>
+            <memory id="IRAM3" start="0x20000000" size="0x8000"/>
+            <memory id="IRAM4" start="0x47000000" size="0x2000"/>
+            <environment name="atmel">
+               <at:extension xmlns:at="http://www.atmel.com/schemas/pack-device-atmel-extension" schemaVersion="1.0">
+                  <at:atdf name="atdf/ATSAME51G18A.atdf"/>
+                  <at:variant ordercode="SAME51G18A-MU" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="85"/>
+                  <at:variant ordercode="SAME51G18A-MF" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="125"/>
+                  <at:variant ordercode="SAME51G18A-MZ" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="125"/>
+                  <at:memory name="FLASH" start="0x00000000" size="0x40000" type="flash" pagesize="512" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="SW0" start="0x00800080" size="0x10" type="fuses" rw="R" address-space="base"/>
+                  <at:memory name="TEMP_LOG" start="0x00800100" size="0x200" type="fuses" pagesize="512" rw="RW" address-space="base"/>
+                  <at:memory name="USER_PAGE" start="0x00804000" size="0x200" type="user_page" pagesize="512" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC" start="0x03000000" size="0x1000000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC_DATARAM" start="0x3000000" size="0x1000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC_TAGRAM" start="0x3001000" size="0x400" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC_VALIDRAM" start="0x3002000" size="0x40" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="QSPI" start="0x04000000" size="0x1000000" type="other" rw="RW" exec="true" external="true" address-space="base"/>
+                  <at:memory name="HSRAM" start="0x20000000" size="0x20000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="HSRAM_ETB" start="0x20000000" size="0x8000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="HSRAM_RET1" start="0x20000000" size="0x8000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="HPB0" start="0x40000000" size="0x4400" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="HPB1" start="0x41000000" size="0x22000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="HPB2" start="0x42000000" size="0x3C00" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="HPB3" start="0x43000000" size="0x3000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="SEEPROM" start="0x44000000" size="0x20000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="SDHC0" start="0x45000000" size="0xC00" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="BKUPRAM" start="0x47000000" size="0x2000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="PPB" start="0xE0000000" size="0x100000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="SCS" start="0xE000E000" size="0x00001000" type="io" rw="RW" address-space="base"/>
+                  <at:interface type="swd" name="SWD"/>
+                  <at:tool id="com.atmel.avrdbg.tool.medbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.atmelice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.pickit4"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemk3"/>
+                  <at:tool id="com.atmel.avrdbg.tool.samice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.snap"/>
+                  <at:tool id="com.atmel.avrdbg.tool.nedbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbgc"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagice3plus"/>
+                  <at:tool id="com.atmel.avrdbg.tool.powerdebugger"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:project name="Barebone C Project">
+                     <at:component Cvendor="ARM" Cclass="CMSIS" Cgroup="CORE"/>
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.c)"/>
+                     </at:component>
+                  </at:project>
+                  <at:project name="Barebone Cpp Project">
+                     <at:component Cvendor="ARM" Cclass="CMSIS" Cgroup="CORE"/>
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.cpp)"/>
+                     </at:component>
+                  </at:project>
+                  <at:prerequisite context="compiling" Tcompiler="GCC" component="ARM-GCC"/>
+                  <at:prerequisite context="compiling" Tcompiler="IAR" component="ARM-IAR"/>
+               </at:extension>
+            </environment>
+            <book name="https://www.microchip.com/wwwproducts/Devices.aspx?product=ATSAME51G18A" title="Device page for ATSAME51G18A"/>
+            <book name="https://www.microchip.com/wwwproducts/productds/ATSAME51G18A" title="Datasheet"/>
+         </device>
+         <device Dname="ATSAME51N19A">
+            <processor Dcore="Cortex-M4" Dendian="Little-endian" Dmpu="MPU" Dfpu="SP_FPU"/>
+            <compile header="include/sam.h" define="__SAME51N19A__"/>
+            <debug svd="svd/ATSAME51N19A.svd"/>
+            <memory id="IROM1" start="0x00000000" size="0x80000" default="1" startup="1"/>
+            <memory id="IRAM1" start="0x20000000" size="0x30000" default="1"/>
+            <memory id="IRAM2" start="0x20000000" size="0x8000"/>
+            <memory id="IRAM3" start="0x20000000" size="0x8000"/>
+            <memory id="IRAM4" start="0x47000000" size="0x2000"/>
+            <algorithm name="keil/arm_addon/flash/ATSAME51_512.FLM" start="0x00000000" size="0x80000" default="1"/>
+            <environment name="atmel">
+               <at:extension xmlns:at="http://www.atmel.com/schemas/pack-device-atmel-extension" schemaVersion="1.0">
+                  <at:atdf name="atdf/ATSAME51N19A.atdf"/>
+                  <at:variant ordercode="SAME51N19A-AU" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="85"/>
+                  <at:variant ordercode="SAME51N19A-AF" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="125"/>
+                  <at:variant ordercode="SAME51N19A-AZ" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="125"/>
+                  <at:memory name="FLASH" start="0x00000000" size="0x80000" type="flash" pagesize="512" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="SW0" start="0x00800080" size="0x10" type="fuses" rw="R" address-space="base"/>
+                  <at:memory name="TEMP_LOG" start="0x00800100" size="0x200" type="fuses" pagesize="512" rw="RW" address-space="base"/>
+                  <at:memory name="USER_PAGE" start="0x00804000" size="0x200" type="user_page" pagesize="512" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC" start="0x03000000" size="0x1000000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC_DATARAM" start="0x3000000" size="0x1000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC_TAGRAM" start="0x3001000" size="0x400" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC_VALIDRAM" start="0x3002000" size="0x40" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="QSPI" start="0x04000000" size="0x1000000" type="other" rw="RW" exec="true" external="true" address-space="base"/>
+                  <at:memory name="HSRAM" start="0x20000000" size="0x30000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="HSRAM_ETB" start="0x20000000" size="0x8000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="HSRAM_RET1" start="0x20000000" size="0x8000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="HPB0" start="0x40000000" size="0x4400" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="HPB1" start="0x41000000" size="0x22000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="HPB2" start="0x42000000" size="0x3C00" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="HPB3" start="0x43000000" size="0x3000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="SEEPROM" start="0x44000000" size="0x20000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="SDHC0" start="0x45000000" size="0xC00" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="BKUPRAM" start="0x47000000" size="0x2000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="PPB" start="0xE0000000" size="0x100000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="SCS" start="0xE000E000" size="0x00001000" type="io" rw="RW" address-space="base"/>
+                  <at:interface type="swd" name="SWD"/>
+                  <at:tool id="com.atmel.avrdbg.tool.medbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.atmelice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.pickit4"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemk3"/>
+                  <at:tool id="com.atmel.avrdbg.tool.samice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.snap"/>
+                  <at:tool id="com.atmel.avrdbg.tool.nedbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbgc"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagice3plus"/>
+                  <at:tool id="com.atmel.avrdbg.tool.powerdebugger"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:project name="Barebone C Project">
+                     <at:component Cvendor="ARM" Cclass="CMSIS" Cgroup="CORE"/>
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.c)"/>
+                     </at:component>
+                  </at:project>
+                  <at:project name="Barebone Cpp Project">
+                     <at:component Cvendor="ARM" Cclass="CMSIS" Cgroup="CORE"/>
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.cpp)"/>
+                     </at:component>
+                  </at:project>
+                  <at:prerequisite context="compiling" Tcompiler="GCC" component="ARM-GCC"/>
+                  <at:prerequisite context="compiling" Tcompiler="IAR" component="ARM-IAR"/>
+                  <at:prerequisite context="compiling" Tcompiler="ARMCC" component="ARMCC"/>
+               </at:extension>
+            </environment>
+            <book name="https://www.microchip.com/wwwproducts/Devices.aspx?product=ATSAME51N19A" title="Device page for ATSAME51N19A"/>
+            <book name="https://www.microchip.com/wwwproducts/productds/ATSAME51N19A" title="Datasheet"/>
+         </device>
+         <device Dname="ATSAME51N20A">
+            <processor Dcore="Cortex-M4" Dendian="Little-endian" Dmpu="MPU" Dfpu="SP_FPU"/>
+            <compile header="include/sam.h" define="__SAME51N20A__"/>
+            <debug svd="svd/ATSAME51N20A.svd"/>
+            <memory id="IROM1" start="0x00000000" size="0x100000" default="1" startup="1"/>
+            <memory id="IRAM1" start="0x20000000" size="0x40000" default="1"/>
+            <memory id="IRAM2" start="0x20000000" size="0x8000"/>
+            <memory id="IRAM3" start="0x20000000" size="0x8000"/>
+            <memory id="IRAM4" start="0x47000000" size="0x2000"/>
+            <algorithm name="keil/arm_addon/flash/ATSAME51_1024.FLM" start="0x00000000" size="0x100000" default="1"/>
+            <environment name="atmel">
+               <at:extension xmlns:at="http://www.atmel.com/schemas/pack-device-atmel-extension" schemaVersion="1.0">
+                  <at:atdf name="atdf/ATSAME51N20A.atdf"/>
+                  <at:variant ordercode="SAME51N20A-AU" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="85"/>
+                  <at:variant ordercode="SAME51N20A-AF" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="125"/>
+                  <at:variant ordercode="SAME51N20A-AZ" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="125"/>
+                  <at:memory name="FLASH" start="0x00000000" size="0x100000" type="flash" pagesize="512" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="SW0" start="0x00800080" size="0x10" type="fuses" rw="R" address-space="base"/>
+                  <at:memory name="TEMP_LOG" start="0x00800100" size="0x200" type="fuses" pagesize="512" rw="RW" address-space="base"/>
+                  <at:memory name="USER_PAGE" start="0x00804000" size="0x200" type="user_page" pagesize="512" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC" start="0x03000000" size="0x1000000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC_DATARAM" start="0x3000000" size="0x1000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC_TAGRAM" start="0x3001000" size="0x400" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC_VALIDRAM" start="0x3002000" size="0x40" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="QSPI" start="0x04000000" size="0x1000000" type="other" rw="RW" exec="true" external="true" address-space="base"/>
+                  <at:memory name="HSRAM" start="0x20000000" size="0x40000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="HSRAM_ETB" start="0x20000000" size="0x8000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="HSRAM_RET1" start="0x20000000" size="0x8000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="HPB0" start="0x40000000" size="0x4400" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="HPB1" start="0x41000000" size="0x22000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="HPB2" start="0x42000000" size="0x3C00" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="HPB3" start="0x43000000" size="0x3000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="SEEPROM" start="0x44000000" size="0x20000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="SDHC0" start="0x45000000" size="0xC00" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="BKUPRAM" start="0x47000000" size="0x2000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="PPB" start="0xE0000000" size="0x100000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="SCS" start="0xE000E000" size="0x00001000" type="io" rw="RW" address-space="base"/>
+                  <at:interface type="swd" name="SWD"/>
+                  <at:tool id="com.atmel.avrdbg.tool.medbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.atmelice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.pickit4"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemk3"/>
+                  <at:tool id="com.atmel.avrdbg.tool.samice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.snap"/>
+                  <at:tool id="com.atmel.avrdbg.tool.nedbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbgc"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagice3plus"/>
+                  <at:tool id="com.atmel.avrdbg.tool.powerdebugger"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:project name="Barebone C Project">
+                     <at:component Cvendor="ARM" Cclass="CMSIS" Cgroup="CORE"/>
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.c)"/>
+                     </at:component>
+                  </at:project>
+                  <at:project name="Barebone Cpp Project">
+                     <at:component Cvendor="ARM" Cclass="CMSIS" Cgroup="CORE"/>
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.cpp)"/>
+                     </at:component>
+                  </at:project>
+                  <at:prerequisite context="compiling" Tcompiler="GCC" component="ARM-GCC"/>
+                  <at:prerequisite context="compiling" Tcompiler="IAR" component="ARM-IAR"/>
+                  <at:prerequisite context="compiling" Tcompiler="ARMCC" component="ARMCC"/>
+               </at:extension>
+            </environment>
+            <book name="https://www.microchip.com/wwwproducts/Devices.aspx?product=ATSAME51N20A" title="Device page for ATSAME51N20A"/>
+            <book name="https://www.microchip.com/wwwproducts/productds/ATSAME51N20A" title="Datasheet"/>
+         </device>
+         <device Dname="ATSAME51J18A">
+            <processor Dcore="Cortex-M4" Dendian="Little-endian" Dmpu="MPU" Dfpu="SP_FPU"/>
+            <compile header="include/sam.h" define="__SAME51J18A__"/>
+            <debug svd="svd/ATSAME51J18A.svd"/>
+            <memory id="IROM1" start="0x00000000" size="0x40000" default="1" startup="1"/>
+            <memory id="IRAM1" start="0x20000000" size="0x20000" default="1"/>
+            <memory id="IRAM2" start="0x20000000" size="0x8000"/>
+            <memory id="IRAM3" start="0x20000000" size="0x8000"/>
+            <memory id="IRAM4" start="0x47000000" size="0x2000"/>
+            <algorithm name="keil/arm_addon/flash/ATSAME51_256.FLM" start="0x00000000" size="0x40000" default="1"/>
+            <environment name="atmel">
+               <at:extension xmlns:at="http://www.atmel.com/schemas/pack-device-atmel-extension" schemaVersion="1.0">
+                  <at:atdf name="atdf/ATSAME51J18A.atdf"/>
+                  <at:variant ordercode="SAME51J18A-MU" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="85"/>
+                  <at:variant ordercode="SAME51J18A-MF" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="125"/>
+                  <at:variant ordercode="SAME51J18A-MZ" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="125"/>
+                  <at:variant ordercode="SAME51J18A-AU" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="85"/>
+                  <at:variant ordercode="SAME51J18A-AF" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="125"/>
+                  <at:variant ordercode="SAME51J18A-AZ" vccmin="1.71" vccmax="3.60" tempmin="-40" tempmax="125"/>
+                  <at:memory name="FLASH" start="0x00000000" size="0x40000" type="flash" pagesize="512" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="SW0" start="0x00800080" size="0x10" type="fuses" rw="R" address-space="base"/>
+                  <at:memory name="TEMP_LOG" start="0x00800100" size="0x200" type="fuses" pagesize="512" rw="RW" address-space="base"/>
+                  <at:memory name="USER_PAGE" start="0x00804000" size="0x200" type="user_page" pagesize="512" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC" start="0x03000000" size="0x1000000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC_DATARAM" start="0x3000000" size="0x1000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC_TAGRAM" start="0x3001000" size="0x400" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="CMCC_VALIDRAM" start="0x3002000" size="0x40" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="QSPI" start="0x04000000" size="0x1000000" type="other" rw="RW" exec="true" external="true" address-space="base"/>
+                  <at:memory name="HSRAM" start="0x20000000" size="0x20000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="HSRAM_ETB" start="0x20000000" size="0x8000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="HSRAM_RET1" start="0x20000000" size="0x8000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="HPB0" start="0x40000000" size="0x4400" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="HPB1" start="0x41000000" size="0x22000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="HPB2" start="0x42000000" size="0x3C00" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="HPB3" start="0x43000000" size="0x3000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="SEEPROM" start="0x44000000" size="0x20000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="SDHC0" start="0x45000000" size="0xC00" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="BKUPRAM" start="0x47000000" size="0x2000" type="ram" rw="RW" exec="true" address-space="base"/>
+                  <at:memory name="PPB" start="0xE0000000" size="0x100000" type="io" rw="RW" address-space="base"/>
+                  <at:memory name="SCS" start="0xE000E000" size="0x00001000" type="io" rw="RW" address-space="base"/>
+                  <at:interface type="swd" name="SWD"/>
+                  <at:tool id="com.atmel.avrdbg.tool.medbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.atmelice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.pickit4"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagicemk3"/>
+                  <at:tool id="com.atmel.avrdbg.tool.samice"/>
+                  <at:tool id="com.atmel.avrdbg.tool.snap"/>
+                  <at:tool id="com.atmel.avrdbg.tool.nedbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbgc"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:tool id="com.atmel.avrdbg.tool.jtagice3plus"/>
+                  <at:tool id="com.atmel.avrdbg.tool.powerdebugger"/>
+                  <at:tool id="com.atmel.avrdbg.tool.edbg"/>
+                  <at:project name="Barebone C Project">
+                     <at:component Cvendor="ARM" Cclass="CMSIS" Cgroup="CORE"/>
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.c)"/>
+                     </at:component>
+                  </at:project>
+                  <at:project name="Barebone Cpp Project">
+                     <at:component Cvendor="ARM" Cclass="CMSIS" Cgroup="CORE"/>
+                     <at:component Cvendor="Atmel" Cclass="Device" Cgroup="Startup">
+                        <at:template select="Main file (.cpp)"/>
+                     </at:component>
+                  </at:project>
+                  <at:prerequisite context="compiling" Tcompiler="GCC" component="ARM-GCC"/>
+                  <at:prerequisite context="compiling" Tcompiler="IAR" component="ARM-IAR"/>
+                  <at:prerequisite context="compiling" Tcompiler="ARMCC" component="ARMCC"/>
+               </at:extension>
+            </environment>
+            <book name="https://www.microchip.com/wwwproducts/Devices.aspx?product=ATSAME51J18A" title="Device page for ATSAME51J18A"/>
+            <book name="https://www.microchip.com/wwwproducts/productds/ATSAME51J18A" title="Datasheet"/>
+         </device>
+      </family>
+   </devices>
+   <conditions>
+      <condition id="ARMCC">
+         <accept Tcompiler="ARMCC"/>
+      </condition>
+      <condition id="ARMCC Exe">
+         <accept Tcompiler="ARMCC" Toutput="exe"/>
+      </condition>
+      <condition id="GCC">
+         <accept Tcompiler="GCC"/>
+      </condition>
+      <condition id="GCC Exe">
+         <accept Tcompiler="GCC" Toutput="exe"/>
+      </condition>
+      <condition id="IAR">
+         <accept Tcompiler="IAR"/>
+      </condition>
+      <condition id="IAR Exe">
+         <accept Tcompiler="IAR" Toutput="exe"/>
+      </condition>
+      <condition id="C">
+         <accept Tcompiler="ARMCC"/>
+         <accept Tcompiler="GCC"/>
+         <accept Tcompiler="IAR"/>
+      </condition>
+      <condition id="C Exe">
+         <accept Tcompiler="ARMCC" Toutput="exe"/>
+         <accept Tcompiler="GCC" Toutput="exe"/>
+         <accept Tcompiler="IAR" Toutput="exe"/>
+      </condition>
+      <condition id="C Lib">
+         <accept Tcompiler="ARMCC" Toutput="lib"/>
+         <accept Tcompiler="GCC" Toutput="lib"/>
+         <accept Tcompiler="IAR" Toutput="lib"/>
+      </condition>
+      <condition id="ATSAME51J19A">
+         <require Dvendor="Atmel:3" Dname="ATSAME51J19A"/>
+         <require Cclass="CMSIS" Cgroup="CORE"/>
+      </condition>
+      <condition id="ATSAME51J20A">
+         <require Dvendor="Atmel:3" Dname="ATSAME51J20A"/>
+         <require Cclass="CMSIS" Cgroup="CORE"/>
+      </condition>
+      <condition id="ATSAME51G19A">
+         <require Dvendor="Atmel:3" Dname="ATSAME51G19A"/>
+         <require Cclass="CMSIS" Cgroup="CORE"/>
+      </condition>
+      <condition id="ATSAME51G18A">
+         <require Dvendor="Atmel:3" Dname="ATSAME51G18A"/>
+         <require Cclass="CMSIS" Cgroup="CORE"/>
+      </condition>
+      <condition id="ATSAME51N19A">
+         <require Dvendor="Atmel:3" Dname="ATSAME51N19A"/>
+         <require Cclass="CMSIS" Cgroup="CORE"/>
+      </condition>
+      <condition id="ATSAME51N20A">
+         <require Dvendor="Atmel:3" Dname="ATSAME51N20A"/>
+         <require Cclass="CMSIS" Cgroup="CORE"/>
+      </condition>
+      <condition id="ATSAME51J18A">
+         <require Dvendor="Atmel:3" Dname="ATSAME51J18A"/>
+         <require Cclass="CMSIS" Cgroup="CORE"/>
+      </condition>
+   </conditions>
+   <components>
+      <component Cvendor="Atmel" Cclass="Device" Cgroup="Startup" Cversion="1.1.0" condition="ATSAME51J19A">
+         <description>Headers and startup code for Atmel ATSAME51J19A</description>
+         <files>
+            <file condition="C" category="include" name="include"/>
+            <file condition="C" category="header" name="include/sam.h"/>
+            <file condition="C Exe" category="source" name="templates/main.c" attr="template" select="Main file (.c)"/>
+            <file condition="C Exe" category="source" name="templates/main.cpp" attr="template" select="Main file (.cpp)"/>
+            <file condition="C Lib" category="source" name="templates/library.c" attr="template" select="Main file (.c)"/>
+            <file condition="C Lib" category="source" name="templates/library.cpp" attr="template" select="Main file (.cpp)"/>
+            <file condition="GCC Exe" category="source" name="gcc/system_same51.c" attr="config"/>
+            <file condition="GCC Exe" category="source" name="gcc/gcc/startup_same51.c" attr="config"/>
+            <file condition="GCC Exe" category="linkerScript" name="gcc/gcc/same51j19a_flash.ld" attr="config"/>
+            <file condition="GCC Exe" category="other" name="gcc/gcc/same51j19a_sram.ld" attr="config"/>
+            <file condition="ARMCC Exe" category="source" name="armcc/arm_addon/armcc/system_same51.c" attr="config"/>
+            <file condition="ARMCC Exe" category="source" name="armcc/arm_addon/armcc/arm/startup_same51.s" attr="config"/>
+            <file condition="IAR Exe" category="source" name="iar/system_same51.c" attr="config"/>
+            <file condition="IAR Exe" category="source" name="iar/iar/startup_same51.c" attr="config"/>
+            <file condition="IAR Exe" category="linkerScript" name="iar/iar/same51j19a_flash.icf" attr="config"/>
+            <file condition="IAR Exe" category="other" name="iar/iar/same51j19a_sram.icf" attr="config"/>
+         </files>
+      </component>
+      <component Cvendor="Atmel" Cclass="Device" Cgroup="Startup" Cversion="1.1.0" condition="ATSAME51J20A">
+         <description>Headers and startup code for Atmel ATSAME51J20A</description>
+         <files>
+            <file condition="C" category="include" name="include"/>
+            <file condition="C" category="header" name="include/sam.h"/>
+            <file condition="C Exe" category="source" name="templates/main.c" attr="template" select="Main file (.c)"/>
+            <file condition="C Exe" category="source" name="templates/main.cpp" attr="template" select="Main file (.cpp)"/>
+            <file condition="C Lib" category="source" name="templates/library.c" attr="template" select="Main file (.c)"/>
+            <file condition="C Lib" category="source" name="templates/library.cpp" attr="template" select="Main file (.cpp)"/>
+            <file condition="GCC Exe" category="source" name="gcc/system_same51.c" attr="config"/>
+            <file condition="GCC Exe" category="source" name="gcc/gcc/startup_same51.c" attr="config"/>
+            <file condition="GCC Exe" category="linkerScript" name="gcc/gcc/same51j20a_flash.ld" attr="config"/>
+            <file condition="GCC Exe" category="other" name="gcc/gcc/same51j20a_sram.ld" attr="config"/>
+            <file condition="IAR Exe" category="source" name="iar/system_same51.c" attr="config"/>
+            <file condition="IAR Exe" category="source" name="iar/iar/startup_same51.c" attr="config"/>
+            <file condition="IAR Exe" category="linkerScript" name="iar/iar/same51j20a_flash.icf" attr="config"/>
+            <file condition="IAR Exe" category="other" name="iar/iar/same51j20a_sram.icf" attr="config"/>
+         </files>
+      </component>
+      <component Cvendor="Atmel" Cclass="Device" Cgroup="Startup" Cversion="1.1.0" condition="ATSAME51G19A">
+         <description>Headers and startup code for Atmel ATSAME51G19A</description>
+         <files>
+            <file condition="C" category="include" name="include"/>
+            <file condition="C" category="header" name="include/sam.h"/>
+            <file condition="C Exe" category="source" name="templates/main.c" attr="template" select="Main file (.c)"/>
+            <file condition="C Exe" category="source" name="templates/main.cpp" attr="template" select="Main file (.cpp)"/>
+            <file condition="C Lib" category="source" name="templates/library.c" attr="template" select="Main file (.c)"/>
+            <file condition="C Lib" category="source" name="templates/library.cpp" attr="template" select="Main file (.cpp)"/>
+            <file condition="GCC Exe" category="source" name="gcc/system_same51.c" attr="config"/>
+            <file condition="GCC Exe" category="source" name="gcc/gcc/startup_same51.c" attr="config"/>
+            <file condition="GCC Exe" category="linkerScript" name="gcc/gcc/same51g19a_flash.ld" attr="config"/>
+            <file condition="GCC Exe" category="other" name="gcc/gcc/same51g19a_sram.ld" attr="config"/>
+            <file condition="IAR Exe" category="source" name="iar/system_same51.c" attr="config"/>
+            <file condition="IAR Exe" category="source" name="iar/iar/startup_same51.c" attr="config"/>
+            <file condition="IAR Exe" category="linkerScript" name="iar/iar/same51g19a_flash.icf" attr="config"/>
+            <file condition="IAR Exe" category="other" name="iar/iar/same51g19a_sram.icf" attr="config"/>
+         </files>
+      </component>
+      <component Cvendor="Atmel" Cclass="Device" Cgroup="Startup" Cversion="1.1.0" condition="ATSAME51G18A">
+         <description>Headers and startup code for Atmel ATSAME51G18A</description>
+         <files>
+            <file condition="C" category="include" name="include"/>
+            <file condition="C" category="header" name="include/sam.h"/>
+            <file condition="C Exe" category="source" name="templates/main.c" attr="template" select="Main file (.c)"/>
+            <file condition="C Exe" category="source" name="templates/main.cpp" attr="template" select="Main file (.cpp)"/>
+            <file condition="C Lib" category="source" name="templates/library.c" attr="template" select="Main file (.c)"/>
+            <file condition="C Lib" category="source" name="templates/library.cpp" attr="template" select="Main file (.cpp)"/>
+            <file condition="GCC Exe" category="source" name="gcc/system_same51.c" attr="config"/>
+            <file condition="GCC Exe" category="source" name="gcc/gcc/startup_same51.c" attr="config"/>
+            <file condition="GCC Exe" category="linkerScript" name="gcc/gcc/same51g18a_flash.ld" attr="config"/>
+            <file condition="GCC Exe" category="other" name="gcc/gcc/same51g18a_sram.ld" attr="config"/>
+            <file condition="IAR Exe" category="source" name="iar/system_same51.c" attr="config"/>
+            <file condition="IAR Exe" category="source" name="iar/iar/startup_same51.c" attr="config"/>
+            <file condition="IAR Exe" category="linkerScript" name="iar/iar/same51g18a_flash.icf" attr="config"/>
+            <file condition="IAR Exe" category="other" name="iar/iar/same51g18a_sram.icf" attr="config"/>
+         </files>
+      </component>
+      <component Cvendor="Atmel" Cclass="Device" Cgroup="Startup" Cversion="1.1.0" condition="ATSAME51N19A">
+         <description>Headers and startup code for Atmel ATSAME51N19A</description>
+         <files>
+            <file condition="C" category="include" name="include"/>
+            <file condition="C" category="header" name="include/sam.h"/>
+            <file condition="C Exe" category="source" name="templates/main.c" attr="template" select="Main file (.c)"/>
+            <file condition="C Exe" category="source" name="templates/main.cpp" attr="template" select="Main file (.cpp)"/>
+            <file condition="C Lib" category="source" name="templates/library.c" attr="template" select="Main file (.c)"/>
+            <file condition="C Lib" category="source" name="templates/library.cpp" attr="template" select="Main file (.cpp)"/>
+            <file condition="GCC Exe" category="source" name="gcc/system_same51.c" attr="config"/>
+            <file condition="GCC Exe" category="source" name="gcc/gcc/startup_same51.c" attr="config"/>
+            <file condition="GCC Exe" category="linkerScript" name="gcc/gcc/same51n19a_flash.ld" attr="config"/>
+            <file condition="GCC Exe" category="other" name="gcc/gcc/same51n19a_sram.ld" attr="config"/>
+            <file condition="ARMCC Exe" category="source" name="armcc/arm_addon/armcc/system_same51.c" attr="config"/>
+            <file condition="ARMCC Exe" category="source" name="armcc/arm_addon/armcc/arm/startup_same51.s" attr="config"/>
+            <file condition="IAR Exe" category="source" name="iar/system_same51.c" attr="config"/>
+            <file condition="IAR Exe" category="source" name="iar/iar/startup_same51.c" attr="config"/>
+            <file condition="IAR Exe" category="linkerScript" name="iar/iar/same51n19a_flash.icf" attr="config"/>
+            <file condition="IAR Exe" category="other" name="iar/iar/same51n19a_sram.icf" attr="config"/>
+         </files>
+      </component>
+      <component Cvendor="Atmel" Cclass="Device" Cgroup="Startup" Cversion="1.1.0" condition="ATSAME51N20A">
+         <description>Headers and startup code for Atmel ATSAME51N20A</description>
+         <files>
+            <file condition="C" category="include" name="include"/>
+            <file condition="C" category="header" name="include/sam.h"/>
+            <file condition="C Exe" category="source" name="templates/main.c" attr="template" select="Main file (.c)"/>
+            <file condition="C Exe" category="source" name="templates/main.cpp" attr="template" select="Main file (.cpp)"/>
+            <file condition="C Lib" category="source" name="templates/library.c" attr="template" select="Main file (.c)"/>
+            <file condition="C Lib" category="source" name="templates/library.cpp" attr="template" select="Main file (.cpp)"/>
+            <file condition="GCC Exe" category="source" name="gcc/system_same51.c" attr="config"/>
+            <file condition="GCC Exe" category="source" name="gcc/gcc/startup_same51.c" attr="config"/>
+            <file condition="GCC Exe" category="linkerScript" name="gcc/gcc/same51n20a_flash.ld" attr="config"/>
+            <file condition="GCC Exe" category="other" name="gcc/gcc/same51n20a_sram.ld" attr="config"/>
+            <file condition="ARMCC Exe" category="source" name="armcc/arm_addon/armcc/system_same51.c" attr="config"/>
+            <file condition="ARMCC Exe" category="source" name="armcc/arm_addon/armcc/arm/startup_same51.s" attr="config"/>
+            <file condition="IAR Exe" category="source" name="iar/system_same51.c" attr="config"/>
+            <file condition="IAR Exe" category="source" name="iar/iar/startup_same51.c" attr="config"/>
+            <file condition="IAR Exe" category="linkerScript" name="iar/iar/same51n20a_flash.icf" attr="config"/>
+            <file condition="IAR Exe" category="other" name="iar/iar/same51n20a_sram.icf" attr="config"/>
+         </files>
+      </component>
+      <component Cvendor="Atmel" Cclass="Device" Cgroup="Startup" Cversion="1.1.0" condition="ATSAME51J18A">
+         <description>Headers and startup code for Atmel ATSAME51J18A</description>
+         <files>
+            <file condition="C" category="include" name="include"/>
+            <file condition="C" category="header" name="include/sam.h"/>
+            <file condition="C Exe" category="source" name="templates/main.c" attr="template" select="Main file (.c)"/>
+            <file condition="C Exe" category="source" name="templates/main.cpp" attr="template" select="Main file (.cpp)"/>
+            <file condition="C Lib" category="source" name="templates/library.c" attr="template" select="Main file (.c)"/>
+            <file condition="C Lib" category="source" name="templates/library.cpp" attr="template" select="Main file (.cpp)"/>
+            <file condition="GCC Exe" category="source" name="gcc/system_same51.c" attr="config"/>
+            <file condition="GCC Exe" category="source" name="gcc/gcc/startup_same51.c" attr="config"/>
+            <file condition="GCC Exe" category="linkerScript" name="gcc/gcc/same51j18a_flash.ld" attr="config"/>
+            <file condition="GCC Exe" category="other" name="gcc/gcc/same51j18a_sram.ld" attr="config"/>
+            <file condition="ARMCC Exe" category="source" name="armcc/arm_addon/armcc/system_same51.c" attr="config"/>
+            <file condition="ARMCC Exe" category="source" name="armcc/arm_addon/armcc/arm/startup_same51.s" attr="config"/>
+            <file condition="IAR Exe" category="source" name="iar/system_same51.c" attr="config"/>
+            <file condition="IAR Exe" category="source" name="iar/iar/startup_same51.c" attr="config"/>
+            <file condition="IAR Exe" category="linkerScript" name="iar/iar/same51j18a_flash.icf" attr="config"/>
+            <file condition="IAR Exe" category="other" name="iar/iar/same51j18a_sram.icf" attr="config"/>
+         </files>
+      </component>
+   </components>
+</package>

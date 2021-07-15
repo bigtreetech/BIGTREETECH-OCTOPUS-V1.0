@@ -1,0 +1,20 @@
+{
+    "C_Cpp.dimInactiveRegions": false,
+    "search.exclude": {
+        "**/*.code-search": false,
+        "**/bower_components": false,
+        "**/node_modules": false,
+        "**/*.su": true,
+        "CoreSTM32F4/": true,
+        "CoreLPC/": true
+    },
+    "search.useIgnoreFiles": false,
+    "files.associations": {
+        "initializer_list": "cpp",
+        "list": "cpp",
+        "vector": "cpp",
+        "xhash": "cpp",
+        "xstring": "cpp",
+        "xutility": "cpp"
+    }
+}

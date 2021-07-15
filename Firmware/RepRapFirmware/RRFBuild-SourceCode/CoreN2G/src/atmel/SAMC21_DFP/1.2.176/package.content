@@ -1,0 +1,3080 @@
+<?xml version='1.0' encoding='ASCII'?>
+<package schemaVersion="1.0">
+  <content>
+    <resources target="ATSAMC21J15A">
+      <resource type="atdf" subdir="samc21/atdf">
+        <includes pattern="ATSAMC21J15A.atdf"/>
+      </resource>
+      <resource type="pic" subdir="samc21/edc">
+        <includes pattern="ATSAMC21J15A.PIC"/>
+      </resource>
+      <resource type="svd" subdir="samc21/svd">
+        <includes pattern="ATSAMC21J15A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="samc21/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21.h"/>
+        <includes pattern="samc21j15a.h"/>
+        <includes pattern="system_samc21.h"/>
+        <includes pattern="pio/samc21j15a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="instance/ac.h"/>
+        <includes pattern="instance/adc0.h"/>
+        <includes pattern="instance/adc1.h"/>
+        <includes pattern="instance/can0.h"/>
+        <includes pattern="instance/can1.h"/>
+        <includes pattern="instance/ccl.h"/>
+        <includes pattern="instance/dac.h"/>
+        <includes pattern="instance/divas.h"/>
+        <includes pattern="instance/dmac.h"/>
+        <includes pattern="instance/dsu.h"/>
+        <includes pattern="instance/eic.h"/>
+        <includes pattern="instance/evsys.h"/>
+        <includes pattern="instance/freqm.h"/>
+        <includes pattern="instance/gclk.h"/>
+        <includes pattern="instance/hmatrixhs.h"/>
+        <includes pattern="instance/mclk.h"/>
+        <includes pattern="instance/mtb.h"/>
+        <includes pattern="instance/nvmctrl.h"/>
+        <includes pattern="instance/osc32kctrl.h"/>
+        <includes pattern="instance/oscctrl.h"/>
+        <includes pattern="instance/pac.h"/>
+        <includes pattern="instance/pm.h"/>
+        <includes pattern="instance/port.h"/>
+        <includes pattern="instance/ptc.h"/>
+        <includes pattern="instance/rstc.h"/>
+        <includes pattern="instance/rtc.h"/>
+        <includes pattern="instance/sdadc.h"/>
+        <includes pattern="instance/sercom0.h"/>
+        <includes pattern="instance/sercom1.h"/>
+        <includes pattern="instance/sercom2.h"/>
+        <includes pattern="instance/sercom3.h"/>
+        <includes pattern="instance/sercom4.h"/>
+        <includes pattern="instance/sercom5.h"/>
+        <includes pattern="instance/supc.h"/>
+        <includes pattern="instance/tc0.h"/>
+        <includes pattern="instance/tc1.h"/>
+        <includes pattern="instance/tc2.h"/>
+        <includes pattern="instance/tc3.h"/>
+        <includes pattern="instance/tc4.h"/>
+        <includes pattern="instance/tcc0.h"/>
+        <includes pattern="instance/tcc1.h"/>
+        <includes pattern="instance/tcc2.h"/>
+        <includes pattern="instance/tsens.h"/>
+        <includes pattern="instance/wdt.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21J15A__"/>
+      </resource>
+      <resource type="c.header.mcc" subdir="samc21/include_mcc">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21j15a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/ptc.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="pio/samc21j15a.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21J15A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="samc21/armcc">
+        <includes pattern="Device/SAMC21/Source/ARM/startup_SAMC21.s"/>
+        <includes pattern="Device/SAMC21/Source/system_samc21.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="samc21/keil">
+        <includes pattern="Flash/ATSAMC_32.FLM"/>
+        <includes pattern="Flash/ATSAMC_32_EEPROM.FLM"/>
+        <includes pattern="Flash/FlashOS.h"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvgui"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvopt"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvproj"/>
+        <includes pattern="Flash/ATSAMC/FlashDev.c"/>
+        <includes pattern="Flash/ATSAMC/FlashPrg.c"/>
+        <includes pattern="Flash/ATSAMC/Target.lin"/>
+        <meta key="Flash/ATSAMC_32.FLM" value="start=0x00000000|size=0x08000|default=1"/>
+        <meta key="Flash/ATSAMC_32_EEPROM.FLM" value="start=0x00400000|size=0x00400|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="samc21/gcc">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="gcc/startup_samc21.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="samc21/gcc">
+        <includes pattern="gcc/samc21j15a_flash.ld"/>
+        <includes pattern="gcc/samc21j15a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="samc21/iar">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="iar/startup_samc21.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="samc21/iar">
+        <includes pattern="iar/samc21j15a_flash.icf"/>
+        <includes pattern="iar/samc21j15a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="samc21/iar">
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21J15A.i79"/>
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21J15A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAMC21.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMC21J15A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="samc21/iar">
+        <includes pattern="config/flashloader/Atmel/samc21j15a/samc21j15a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/samc21j15a/samc21j15a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/samc21j15a/samc21j15a-flash.out"/>
+      </resource>
+      <resource type="scripts.mdbcore" subdir="samc21/../scripts">
+        <includes pattern="dap_cortex-m0plus.py"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMC21N17A">
+      <resource type="atdf" subdir="samc21n/atdf">
+        <includes pattern="ATSAMC21N17A.atdf"/>
+      </resource>
+      <resource type="pic" subdir="samc21n/edc">
+        <includes pattern="ATSAMC21N17A.PIC"/>
+      </resource>
+      <resource type="svd" subdir="samc21n/svd">
+        <includes pattern="ATSAMC21N17A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="samc21n/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21.h"/>
+        <includes pattern="samc21n17a.h"/>
+        <includes pattern="system_samc21.h"/>
+        <includes pattern="pio/samc21n17a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="instance/ac.h"/>
+        <includes pattern="instance/adc0.h"/>
+        <includes pattern="instance/adc1.h"/>
+        <includes pattern="instance/can0.h"/>
+        <includes pattern="instance/can1.h"/>
+        <includes pattern="instance/ccl.h"/>
+        <includes pattern="instance/dac.h"/>
+        <includes pattern="instance/divas.h"/>
+        <includes pattern="instance/dmac.h"/>
+        <includes pattern="instance/dsu.h"/>
+        <includes pattern="instance/eic.h"/>
+        <includes pattern="instance/evsys.h"/>
+        <includes pattern="instance/freqm.h"/>
+        <includes pattern="instance/gclk.h"/>
+        <includes pattern="instance/hmatrixhs.h"/>
+        <includes pattern="instance/mclk.h"/>
+        <includes pattern="instance/mtb.h"/>
+        <includes pattern="instance/nvmctrl.h"/>
+        <includes pattern="instance/osc32kctrl.h"/>
+        <includes pattern="instance/oscctrl.h"/>
+        <includes pattern="instance/pac.h"/>
+        <includes pattern="instance/pm.h"/>
+        <includes pattern="instance/port.h"/>
+        <includes pattern="instance/ptc.h"/>
+        <includes pattern="instance/rstc.h"/>
+        <includes pattern="instance/rtc.h"/>
+        <includes pattern="instance/sdadc.h"/>
+        <includes pattern="instance/sercom0.h"/>
+        <includes pattern="instance/sercom1.h"/>
+        <includes pattern="instance/sercom2.h"/>
+        <includes pattern="instance/sercom3.h"/>
+        <includes pattern="instance/sercom4.h"/>
+        <includes pattern="instance/sercom5.h"/>
+        <includes pattern="instance/sercom6.h"/>
+        <includes pattern="instance/sercom7.h"/>
+        <includes pattern="instance/supc.h"/>
+        <includes pattern="instance/tc0.h"/>
+        <includes pattern="instance/tc1.h"/>
+        <includes pattern="instance/tc2.h"/>
+        <includes pattern="instance/tc3.h"/>
+        <includes pattern="instance/tc4.h"/>
+        <includes pattern="instance/tc5.h"/>
+        <includes pattern="instance/tc6.h"/>
+        <includes pattern="instance/tc7.h"/>
+        <includes pattern="instance/tcc0.h"/>
+        <includes pattern="instance/tcc1.h"/>
+        <includes pattern="instance/tcc2.h"/>
+        <includes pattern="instance/tsens.h"/>
+        <includes pattern="instance/wdt.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21N17A__"/>
+      </resource>
+      <resource type="c.header.mcc" subdir="samc21n/include_mcc">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21n17a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/ptc.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="pio/samc21n17a.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21N17A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="samc21n/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="samc21n/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="samc21n/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="samc21n/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="samc21n/armcc">
+        <includes pattern="Device/SAMC21N/Source/ARM/startup_SAMC21.s"/>
+        <includes pattern="Device/SAMC21N/Source/system_samc21.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="samc21n/keil">
+        <includes pattern="Flash/ATSAMC_128.FLM"/>
+        <includes pattern="Flash/ATSAMC_128_EEPROM.FLM"/>
+        <includes pattern="Flash/FlashOS.h"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvgui"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvopt"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvproj"/>
+        <includes pattern="Flash/ATSAMC/FlashDev.c"/>
+        <includes pattern="Flash/ATSAMC/FlashPrg.c"/>
+        <includes pattern="Flash/ATSAMC/Target.lin"/>
+        <meta key="Flash/ATSAMC_128.FLM" value="start=0x00000000|size=0x20000|default=1"/>
+        <meta key="Flash/ATSAMC_128_EEPROM.FLM" value="start=0x00400000|size=0x01000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="samc21n/gcc">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="gcc/startup_samc21.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="samc21n/gcc">
+        <includes pattern="gcc/samc21n17a_flash.ld"/>
+        <includes pattern="gcc/samc21n17a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="samc21n/iar">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="iar/startup_samc21.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="samc21n/iar">
+        <includes pattern="iar/samc21n17a_flash.icf"/>
+        <includes pattern="iar/samc21n17a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="samc21n/iar">
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21N17A.i79"/>
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21N17A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMC21N17A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="samc21n/iar">
+        <includes pattern="config/flashloader/Atmel/samc21n17a/samc21n17a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/samc21n17a/samc21n17a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/samc21n17a/samc21n17a-flash.out"/>
+      </resource>
+      <resource type="scripts.mdbcore" subdir="samc21n/../scripts">
+        <includes pattern="dap_cortex-m0plus.py"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMC21E15A">
+      <resource type="atdf" subdir="samc21/atdf">
+        <includes pattern="ATSAMC21E15A.atdf"/>
+      </resource>
+      <resource type="pic" subdir="samc21/edc">
+        <includes pattern="ATSAMC21E15A.PIC"/>
+      </resource>
+      <resource type="svd" subdir="samc21/svd">
+        <includes pattern="ATSAMC21E15A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="samc21/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21.h"/>
+        <includes pattern="samc21e15a.h"/>
+        <includes pattern="system_samc21.h"/>
+        <includes pattern="pio/samc21e15a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="instance/ac.h"/>
+        <includes pattern="instance/adc0.h"/>
+        <includes pattern="instance/adc1.h"/>
+        <includes pattern="instance/can0.h"/>
+        <includes pattern="instance/can1.h"/>
+        <includes pattern="instance/ccl.h"/>
+        <includes pattern="instance/dac.h"/>
+        <includes pattern="instance/divas.h"/>
+        <includes pattern="instance/dmac.h"/>
+        <includes pattern="instance/dsu.h"/>
+        <includes pattern="instance/eic.h"/>
+        <includes pattern="instance/evsys.h"/>
+        <includes pattern="instance/freqm.h"/>
+        <includes pattern="instance/gclk.h"/>
+        <includes pattern="instance/hmatrixhs.h"/>
+        <includes pattern="instance/mclk.h"/>
+        <includes pattern="instance/mtb.h"/>
+        <includes pattern="instance/nvmctrl.h"/>
+        <includes pattern="instance/osc32kctrl.h"/>
+        <includes pattern="instance/oscctrl.h"/>
+        <includes pattern="instance/pac.h"/>
+        <includes pattern="instance/pm.h"/>
+        <includes pattern="instance/port.h"/>
+        <includes pattern="instance/ptc.h"/>
+        <includes pattern="instance/rstc.h"/>
+        <includes pattern="instance/rtc.h"/>
+        <includes pattern="instance/sdadc.h"/>
+        <includes pattern="instance/sercom0.h"/>
+        <includes pattern="instance/sercom1.h"/>
+        <includes pattern="instance/sercom2.h"/>
+        <includes pattern="instance/sercom3.h"/>
+        <includes pattern="instance/sercom4.h"/>
+        <includes pattern="instance/sercom5.h"/>
+        <includes pattern="instance/supc.h"/>
+        <includes pattern="instance/tc0.h"/>
+        <includes pattern="instance/tc1.h"/>
+        <includes pattern="instance/tc2.h"/>
+        <includes pattern="instance/tc3.h"/>
+        <includes pattern="instance/tc4.h"/>
+        <includes pattern="instance/tcc0.h"/>
+        <includes pattern="instance/tcc1.h"/>
+        <includes pattern="instance/tcc2.h"/>
+        <includes pattern="instance/tsens.h"/>
+        <includes pattern="instance/wdt.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21E15A__"/>
+      </resource>
+      <resource type="c.header.mcc" subdir="samc21/include_mcc">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21e15a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/ptc.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="pio/samc21e15a.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21E15A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="samc21/armcc">
+        <includes pattern="Device/SAMC21/Source/ARM/startup_SAMC21.s"/>
+        <includes pattern="Device/SAMC21/Source/system_samc21.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="samc21/keil">
+        <includes pattern="Flash/ATSAMC_32.FLM"/>
+        <includes pattern="Flash/ATSAMC_32_EEPROM.FLM"/>
+        <includes pattern="Flash/FlashOS.h"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvgui"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvopt"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvproj"/>
+        <includes pattern="Flash/ATSAMC/FlashDev.c"/>
+        <includes pattern="Flash/ATSAMC/FlashPrg.c"/>
+        <includes pattern="Flash/ATSAMC/Target.lin"/>
+        <meta key="Flash/ATSAMC_32.FLM" value="start=0x00000000|size=0x08000|default=1"/>
+        <meta key="Flash/ATSAMC_32_EEPROM.FLM" value="start=0x00400000|size=0x00400|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="samc21/gcc">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="gcc/startup_samc21.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="samc21/gcc">
+        <includes pattern="gcc/samc21e15a_flash.ld"/>
+        <includes pattern="gcc/samc21e15a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="samc21/iar">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="iar/startup_samc21.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="samc21/iar">
+        <includes pattern="iar/samc21e15a_flash.icf"/>
+        <includes pattern="iar/samc21e15a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="samc21/iar">
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21E15A.i79"/>
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21E15A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAMC21.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMC21E15A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="samc21/iar">
+        <includes pattern="config/flashloader/Atmel/samc21e15a/samc21e15a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/samc21e15a/samc21e15a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/samc21e15a/samc21e15a-flash.out"/>
+      </resource>
+      <resource type="scripts.mdbcore" subdir="samc21/../scripts">
+        <includes pattern="dap_cortex-m0plus.py"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMC21J18A">
+      <resource type="atdf" subdir="samc21/atdf">
+        <includes pattern="ATSAMC21J18A.atdf"/>
+      </resource>
+      <resource type="pic" subdir="samc21/edc">
+        <includes pattern="ATSAMC21J18A.PIC"/>
+      </resource>
+      <resource type="svd" subdir="samc21/svd">
+        <includes pattern="ATSAMC21J18A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="samc21/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21.h"/>
+        <includes pattern="samc21j18a.h"/>
+        <includes pattern="system_samc21.h"/>
+        <includes pattern="pio/samc21j18a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="instance/ac.h"/>
+        <includes pattern="instance/adc0.h"/>
+        <includes pattern="instance/adc1.h"/>
+        <includes pattern="instance/can0.h"/>
+        <includes pattern="instance/can1.h"/>
+        <includes pattern="instance/ccl.h"/>
+        <includes pattern="instance/dac.h"/>
+        <includes pattern="instance/divas.h"/>
+        <includes pattern="instance/dmac.h"/>
+        <includes pattern="instance/dsu.h"/>
+        <includes pattern="instance/eic.h"/>
+        <includes pattern="instance/evsys.h"/>
+        <includes pattern="instance/freqm.h"/>
+        <includes pattern="instance/gclk.h"/>
+        <includes pattern="instance/hmatrixhs.h"/>
+        <includes pattern="instance/mclk.h"/>
+        <includes pattern="instance/mtb.h"/>
+        <includes pattern="instance/nvmctrl.h"/>
+        <includes pattern="instance/osc32kctrl.h"/>
+        <includes pattern="instance/oscctrl.h"/>
+        <includes pattern="instance/pac.h"/>
+        <includes pattern="instance/pm.h"/>
+        <includes pattern="instance/port.h"/>
+        <includes pattern="instance/ptc.h"/>
+        <includes pattern="instance/rstc.h"/>
+        <includes pattern="instance/rtc.h"/>
+        <includes pattern="instance/sdadc.h"/>
+        <includes pattern="instance/sercom0.h"/>
+        <includes pattern="instance/sercom1.h"/>
+        <includes pattern="instance/sercom2.h"/>
+        <includes pattern="instance/sercom3.h"/>
+        <includes pattern="instance/sercom4.h"/>
+        <includes pattern="instance/sercom5.h"/>
+        <includes pattern="instance/supc.h"/>
+        <includes pattern="instance/tc0.h"/>
+        <includes pattern="instance/tc1.h"/>
+        <includes pattern="instance/tc2.h"/>
+        <includes pattern="instance/tc3.h"/>
+        <includes pattern="instance/tc4.h"/>
+        <includes pattern="instance/tcc0.h"/>
+        <includes pattern="instance/tcc1.h"/>
+        <includes pattern="instance/tcc2.h"/>
+        <includes pattern="instance/tsens.h"/>
+        <includes pattern="instance/wdt.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21J18A__"/>
+      </resource>
+      <resource type="c.header.mcc" subdir="samc21/include_mcc">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21j18a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/ptc.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="pio/samc21j18a.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21J18A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="samc21/armcc">
+        <includes pattern="Device/SAMC21/Source/ARM/startup_SAMC21.s"/>
+        <includes pattern="Device/SAMC21/Source/system_samc21.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="samc21/keil">
+        <includes pattern="Flash/ATSAMC_256.FLM"/>
+        <includes pattern="Flash/ATSAMC_256_EEPROM.FLM"/>
+        <includes pattern="Flash/FlashOS.h"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvgui"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvopt"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvproj"/>
+        <includes pattern="Flash/ATSAMC/FlashDev.c"/>
+        <includes pattern="Flash/ATSAMC/FlashPrg.c"/>
+        <includes pattern="Flash/ATSAMC/Target.lin"/>
+        <meta key="Flash/ATSAMC_256.FLM" value="start=0x00000000|size=0x40000|default=1"/>
+        <meta key="Flash/ATSAMC_256_EEPROM.FLM" value="start=0x00400000|size=0x02000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="samc21/gcc">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="gcc/startup_samc21.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="samc21/gcc">
+        <includes pattern="gcc/samc21j18a_flash.ld"/>
+        <includes pattern="gcc/samc21j18a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="samc21/iar">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="iar/startup_samc21.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="samc21/iar">
+        <includes pattern="iar/samc21j18a_flash.icf"/>
+        <includes pattern="iar/samc21j18a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="samc21/iar">
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21J18A.i79"/>
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21J18A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAMC21.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMC21J18A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="samc21/iar">
+        <includes pattern="config/flashloader/Atmel/samc21j18a/samc21j18a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/samc21j18a/samc21j18a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/samc21j18a/samc21j18a-flash.out"/>
+      </resource>
+      <resource type="scripts.mdbcore" subdir="samc21/../scripts">
+        <includes pattern="dap_cortex-m0plus.py"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMC21E18A">
+      <resource type="atdf" subdir="samc21/atdf">
+        <includes pattern="ATSAMC21E18A.atdf"/>
+      </resource>
+      <resource type="pic" subdir="samc21/edc">
+        <includes pattern="ATSAMC21E18A.PIC"/>
+      </resource>
+      <resource type="svd" subdir="samc21/svd">
+        <includes pattern="ATSAMC21E18A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="samc21/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21.h"/>
+        <includes pattern="samc21e18a.h"/>
+        <includes pattern="system_samc21.h"/>
+        <includes pattern="pio/samc21e18a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="instance/ac.h"/>
+        <includes pattern="instance/adc0.h"/>
+        <includes pattern="instance/adc1.h"/>
+        <includes pattern="instance/can0.h"/>
+        <includes pattern="instance/can1.h"/>
+        <includes pattern="instance/ccl.h"/>
+        <includes pattern="instance/dac.h"/>
+        <includes pattern="instance/divas.h"/>
+        <includes pattern="instance/dmac.h"/>
+        <includes pattern="instance/dsu.h"/>
+        <includes pattern="instance/eic.h"/>
+        <includes pattern="instance/evsys.h"/>
+        <includes pattern="instance/freqm.h"/>
+        <includes pattern="instance/gclk.h"/>
+        <includes pattern="instance/hmatrixhs.h"/>
+        <includes pattern="instance/mclk.h"/>
+        <includes pattern="instance/mtb.h"/>
+        <includes pattern="instance/nvmctrl.h"/>
+        <includes pattern="instance/osc32kctrl.h"/>
+        <includes pattern="instance/oscctrl.h"/>
+        <includes pattern="instance/pac.h"/>
+        <includes pattern="instance/pm.h"/>
+        <includes pattern="instance/port.h"/>
+        <includes pattern="instance/ptc.h"/>
+        <includes pattern="instance/rstc.h"/>
+        <includes pattern="instance/rtc.h"/>
+        <includes pattern="instance/sdadc.h"/>
+        <includes pattern="instance/sercom0.h"/>
+        <includes pattern="instance/sercom1.h"/>
+        <includes pattern="instance/sercom2.h"/>
+        <includes pattern="instance/sercom3.h"/>
+        <includes pattern="instance/sercom4.h"/>
+        <includes pattern="instance/sercom5.h"/>
+        <includes pattern="instance/supc.h"/>
+        <includes pattern="instance/tc0.h"/>
+        <includes pattern="instance/tc1.h"/>
+        <includes pattern="instance/tc2.h"/>
+        <includes pattern="instance/tc3.h"/>
+        <includes pattern="instance/tc4.h"/>
+        <includes pattern="instance/tcc0.h"/>
+        <includes pattern="instance/tcc1.h"/>
+        <includes pattern="instance/tcc2.h"/>
+        <includes pattern="instance/tsens.h"/>
+        <includes pattern="instance/wdt.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21E18A__"/>
+      </resource>
+      <resource type="c.header.mcc" subdir="samc21/include_mcc">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21e18a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/ptc.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="pio/samc21e18a.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21E18A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="samc21/armcc">
+        <includes pattern="Device/SAMC21/Source/ARM/startup_SAMC21.s"/>
+        <includes pattern="Device/SAMC21/Source/system_samc21.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="samc21/keil">
+        <includes pattern="Flash/ATSAMC_256.FLM"/>
+        <includes pattern="Flash/ATSAMC_256_EEPROM.FLM"/>
+        <includes pattern="Flash/FlashOS.h"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvgui"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvopt"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvproj"/>
+        <includes pattern="Flash/ATSAMC/FlashDev.c"/>
+        <includes pattern="Flash/ATSAMC/FlashPrg.c"/>
+        <includes pattern="Flash/ATSAMC/Target.lin"/>
+        <meta key="Flash/ATSAMC_256.FLM" value="start=0x00000000|size=0x40000|default=1"/>
+        <meta key="Flash/ATSAMC_256_EEPROM.FLM" value="start=0x00400000|size=0x02000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="samc21/gcc">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="gcc/startup_samc21.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="samc21/gcc">
+        <includes pattern="gcc/samc21e18a_flash.ld"/>
+        <includes pattern="gcc/samc21e18a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="samc21/iar">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="iar/startup_samc21.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="samc21/iar">
+        <includes pattern="iar/samc21e18a_flash.icf"/>
+        <includes pattern="iar/samc21e18a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="samc21/iar">
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21E18A.i79"/>
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21E18A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAMC21.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMC21E18A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="samc21/iar">
+        <includes pattern="config/flashloader/Atmel/samc21e18a/samc21e18a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/samc21e18a/samc21e18a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/samc21e18a/samc21e18a-flash.out"/>
+      </resource>
+      <resource type="scripts.mdbcore" subdir="samc21/../scripts">
+        <includes pattern="dap_cortex-m0plus.py"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMC21J18AU">
+      <resource type="atdf" subdir="samc21/atdf">
+        <includes pattern="ATSAMC21J18AU.atdf"/>
+      </resource>
+      <resource type="pic" subdir="samc21/edc">
+        <includes pattern="ATSAMC21J18AU.PIC"/>
+      </resource>
+      <resource type="svd" subdir="samc21/svd">
+        <includes pattern="ATSAMC21J18AU.svd"/>
+      </resource>
+      <resource type="c.header" subdir="samc21/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21.h"/>
+        <includes pattern="samc21j18au.h"/>
+        <includes pattern="system_samc21.h"/>
+        <includes pattern="pio/samc21j18au.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="instance/ac.h"/>
+        <includes pattern="instance/adc0.h"/>
+        <includes pattern="instance/adc1.h"/>
+        <includes pattern="instance/can0.h"/>
+        <includes pattern="instance/can1.h"/>
+        <includes pattern="instance/ccl.h"/>
+        <includes pattern="instance/dac.h"/>
+        <includes pattern="instance/divas.h"/>
+        <includes pattern="instance/dmac.h"/>
+        <includes pattern="instance/dsu.h"/>
+        <includes pattern="instance/eic.h"/>
+        <includes pattern="instance/evsys.h"/>
+        <includes pattern="instance/freqm.h"/>
+        <includes pattern="instance/gclk.h"/>
+        <includes pattern="instance/hmatrixhs.h"/>
+        <includes pattern="instance/mclk.h"/>
+        <includes pattern="instance/mtb.h"/>
+        <includes pattern="instance/nvmctrl.h"/>
+        <includes pattern="instance/osc32kctrl.h"/>
+        <includes pattern="instance/oscctrl.h"/>
+        <includes pattern="instance/pac.h"/>
+        <includes pattern="instance/pm.h"/>
+        <includes pattern="instance/port.h"/>
+        <includes pattern="instance/ptc.h"/>
+        <includes pattern="instance/rstc.h"/>
+        <includes pattern="instance/rtc.h"/>
+        <includes pattern="instance/sdadc.h"/>
+        <includes pattern="instance/sercom0.h"/>
+        <includes pattern="instance/sercom1.h"/>
+        <includes pattern="instance/sercom2.h"/>
+        <includes pattern="instance/sercom3.h"/>
+        <includes pattern="instance/sercom4.h"/>
+        <includes pattern="instance/sercom5.h"/>
+        <includes pattern="instance/supc.h"/>
+        <includes pattern="instance/tc0.h"/>
+        <includes pattern="instance/tc1.h"/>
+        <includes pattern="instance/tc2.h"/>
+        <includes pattern="instance/tc3.h"/>
+        <includes pattern="instance/tc4.h"/>
+        <includes pattern="instance/tcc0.h"/>
+        <includes pattern="instance/tcc1.h"/>
+        <includes pattern="instance/tcc2.h"/>
+        <includes pattern="instance/tsens.h"/>
+        <includes pattern="instance/wdt.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21J18AU__"/>
+      </resource>
+      <resource type="c.header.mcc" subdir="samc21/include_mcc">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21j18au.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/ptc.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="pio/samc21j18au.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21J18AU__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="samc21/armcc">
+        <includes pattern="Device/SAMC21/Source/ARM/startup_SAMC21.s"/>
+        <includes pattern="Device/SAMC21/Source/system_samc21.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="samc21/keil">
+        <includes pattern="Flash/ATSAMC_256.FLM"/>
+        <includes pattern="Flash/ATSAMC_256_EEPROM.FLM"/>
+        <includes pattern="Flash/FlashOS.h"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvgui"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvopt"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvproj"/>
+        <includes pattern="Flash/ATSAMC/FlashDev.c"/>
+        <includes pattern="Flash/ATSAMC/FlashPrg.c"/>
+        <includes pattern="Flash/ATSAMC/Target.lin"/>
+        <meta key="Flash/ATSAMC_256.FLM" value="start=0x00000000|size=0x40000|default=1"/>
+        <meta key="Flash/ATSAMC_256_EEPROM.FLM" value="start=0x00400000|size=0x02000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="samc21/gcc">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="gcc/startup_samc21.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="samc21/gcc">
+        <includes pattern="gcc/samc21j18au_flash.ld"/>
+        <includes pattern="gcc/samc21j18au_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="samc21/iar">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="iar/startup_samc21.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="samc21/iar">
+        <includes pattern="iar/samc21j18au_flash.icf"/>
+        <includes pattern="iar/samc21j18au_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="samc21/iar">
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21J18AU.i79"/>
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21J18AU.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAMC21.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMC21J18AU.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="samc21/iar">
+        <includes pattern="config/flashloader/Atmel/samc21j18au/samc21j18au-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/samc21j18au/samc21j18au-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/samc21j18au/samc21j18au-flash.out"/>
+      </resource>
+      <resource type="scripts.mdbcore" subdir="samc21/../scripts">
+        <includes pattern="dap_cortex-m0plus.py"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMC21E16A">
+      <resource type="atdf" subdir="samc21/atdf">
+        <includes pattern="ATSAMC21E16A.atdf"/>
+      </resource>
+      <resource type="pic" subdir="samc21/edc">
+        <includes pattern="ATSAMC21E16A.PIC"/>
+      </resource>
+      <resource type="svd" subdir="samc21/svd">
+        <includes pattern="ATSAMC21E16A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="samc21/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21.h"/>
+        <includes pattern="samc21e16a.h"/>
+        <includes pattern="system_samc21.h"/>
+        <includes pattern="pio/samc21e16a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="instance/ac.h"/>
+        <includes pattern="instance/adc0.h"/>
+        <includes pattern="instance/adc1.h"/>
+        <includes pattern="instance/can0.h"/>
+        <includes pattern="instance/can1.h"/>
+        <includes pattern="instance/ccl.h"/>
+        <includes pattern="instance/dac.h"/>
+        <includes pattern="instance/divas.h"/>
+        <includes pattern="instance/dmac.h"/>
+        <includes pattern="instance/dsu.h"/>
+        <includes pattern="instance/eic.h"/>
+        <includes pattern="instance/evsys.h"/>
+        <includes pattern="instance/freqm.h"/>
+        <includes pattern="instance/gclk.h"/>
+        <includes pattern="instance/hmatrixhs.h"/>
+        <includes pattern="instance/mclk.h"/>
+        <includes pattern="instance/mtb.h"/>
+        <includes pattern="instance/nvmctrl.h"/>
+        <includes pattern="instance/osc32kctrl.h"/>
+        <includes pattern="instance/oscctrl.h"/>
+        <includes pattern="instance/pac.h"/>
+        <includes pattern="instance/pm.h"/>
+        <includes pattern="instance/port.h"/>
+        <includes pattern="instance/ptc.h"/>
+        <includes pattern="instance/rstc.h"/>
+        <includes pattern="instance/rtc.h"/>
+        <includes pattern="instance/sdadc.h"/>
+        <includes pattern="instance/sercom0.h"/>
+        <includes pattern="instance/sercom1.h"/>
+        <includes pattern="instance/sercom2.h"/>
+        <includes pattern="instance/sercom3.h"/>
+        <includes pattern="instance/sercom4.h"/>
+        <includes pattern="instance/sercom5.h"/>
+        <includes pattern="instance/supc.h"/>
+        <includes pattern="instance/tc0.h"/>
+        <includes pattern="instance/tc1.h"/>
+        <includes pattern="instance/tc2.h"/>
+        <includes pattern="instance/tc3.h"/>
+        <includes pattern="instance/tc4.h"/>
+        <includes pattern="instance/tcc0.h"/>
+        <includes pattern="instance/tcc1.h"/>
+        <includes pattern="instance/tcc2.h"/>
+        <includes pattern="instance/tsens.h"/>
+        <includes pattern="instance/wdt.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21E16A__"/>
+      </resource>
+      <resource type="c.header.mcc" subdir="samc21/include_mcc">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21e16a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/ptc.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="pio/samc21e16a.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21E16A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="samc21/armcc">
+        <includes pattern="Device/SAMC21/Source/ARM/startup_SAMC21.s"/>
+        <includes pattern="Device/SAMC21/Source/system_samc21.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="samc21/keil">
+        <includes pattern="Flash/ATSAMC_64.FLM"/>
+        <includes pattern="Flash/ATSAMC_64_EEPROM.FLM"/>
+        <includes pattern="Flash/FlashOS.h"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvgui"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvopt"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvproj"/>
+        <includes pattern="Flash/ATSAMC/FlashDev.c"/>
+        <includes pattern="Flash/ATSAMC/FlashPrg.c"/>
+        <includes pattern="Flash/ATSAMC/Target.lin"/>
+        <meta key="Flash/ATSAMC_64.FLM" value="start=0x00000000|size=0x10000|default=1"/>
+        <meta key="Flash/ATSAMC_64_EEPROM.FLM" value="start=0x00400000|size=0x00800|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="samc21/gcc">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="gcc/startup_samc21.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="samc21/gcc">
+        <includes pattern="gcc/samc21e16a_flash.ld"/>
+        <includes pattern="gcc/samc21e16a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="samc21/iar">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="iar/startup_samc21.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="samc21/iar">
+        <includes pattern="iar/samc21e16a_flash.icf"/>
+        <includes pattern="iar/samc21e16a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="samc21/iar">
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21E16A.i79"/>
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21E16A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAMC21.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMC21E16A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="samc21/iar">
+        <includes pattern="config/flashloader/Atmel/samc21e16a/samc21e16a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/samc21e16a/samc21e16a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/samc21e16a/samc21e16a-flash.out"/>
+      </resource>
+      <resource type="scripts.mdbcore" subdir="samc21/../scripts">
+        <includes pattern="dap_cortex-m0plus.py"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMC21E17A">
+      <resource type="atdf" subdir="samc21/atdf">
+        <includes pattern="ATSAMC21E17A.atdf"/>
+      </resource>
+      <resource type="pic" subdir="samc21/edc">
+        <includes pattern="ATSAMC21E17A.PIC"/>
+      </resource>
+      <resource type="svd" subdir="samc21/svd">
+        <includes pattern="ATSAMC21E17A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="samc21/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21.h"/>
+        <includes pattern="samc21e17a.h"/>
+        <includes pattern="system_samc21.h"/>
+        <includes pattern="pio/samc21e17a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="instance/ac.h"/>
+        <includes pattern="instance/adc0.h"/>
+        <includes pattern="instance/adc1.h"/>
+        <includes pattern="instance/can0.h"/>
+        <includes pattern="instance/can1.h"/>
+        <includes pattern="instance/ccl.h"/>
+        <includes pattern="instance/dac.h"/>
+        <includes pattern="instance/divas.h"/>
+        <includes pattern="instance/dmac.h"/>
+        <includes pattern="instance/dsu.h"/>
+        <includes pattern="instance/eic.h"/>
+        <includes pattern="instance/evsys.h"/>
+        <includes pattern="instance/freqm.h"/>
+        <includes pattern="instance/gclk.h"/>
+        <includes pattern="instance/hmatrixhs.h"/>
+        <includes pattern="instance/mclk.h"/>
+        <includes pattern="instance/mtb.h"/>
+        <includes pattern="instance/nvmctrl.h"/>
+        <includes pattern="instance/osc32kctrl.h"/>
+        <includes pattern="instance/oscctrl.h"/>
+        <includes pattern="instance/pac.h"/>
+        <includes pattern="instance/pm.h"/>
+        <includes pattern="instance/port.h"/>
+        <includes pattern="instance/ptc.h"/>
+        <includes pattern="instance/rstc.h"/>
+        <includes pattern="instance/rtc.h"/>
+        <includes pattern="instance/sdadc.h"/>
+        <includes pattern="instance/sercom0.h"/>
+        <includes pattern="instance/sercom1.h"/>
+        <includes pattern="instance/sercom2.h"/>
+        <includes pattern="instance/sercom3.h"/>
+        <includes pattern="instance/sercom4.h"/>
+        <includes pattern="instance/sercom5.h"/>
+        <includes pattern="instance/supc.h"/>
+        <includes pattern="instance/tc0.h"/>
+        <includes pattern="instance/tc1.h"/>
+        <includes pattern="instance/tc2.h"/>
+        <includes pattern="instance/tc3.h"/>
+        <includes pattern="instance/tc4.h"/>
+        <includes pattern="instance/tcc0.h"/>
+        <includes pattern="instance/tcc1.h"/>
+        <includes pattern="instance/tcc2.h"/>
+        <includes pattern="instance/tsens.h"/>
+        <includes pattern="instance/wdt.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21E17A__"/>
+      </resource>
+      <resource type="c.header.mcc" subdir="samc21/include_mcc">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21e17a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/ptc.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="pio/samc21e17a.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21E17A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="samc21/armcc">
+        <includes pattern="Device/SAMC21/Source/ARM/startup_SAMC21.s"/>
+        <includes pattern="Device/SAMC21/Source/system_samc21.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="samc21/keil">
+        <includes pattern="Flash/ATSAMC_128.FLM"/>
+        <includes pattern="Flash/ATSAMC_128_EEPROM.FLM"/>
+        <includes pattern="Flash/FlashOS.h"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvgui"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvopt"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvproj"/>
+        <includes pattern="Flash/ATSAMC/FlashDev.c"/>
+        <includes pattern="Flash/ATSAMC/FlashPrg.c"/>
+        <includes pattern="Flash/ATSAMC/Target.lin"/>
+        <meta key="Flash/ATSAMC_128.FLM" value="start=0x00000000|size=0x20000|default=1"/>
+        <meta key="Flash/ATSAMC_128_EEPROM.FLM" value="start=0x00400000|size=0x01000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="samc21/gcc">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="gcc/startup_samc21.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="samc21/gcc">
+        <includes pattern="gcc/samc21e17a_flash.ld"/>
+        <includes pattern="gcc/samc21e17a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="samc21/iar">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="iar/startup_samc21.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="samc21/iar">
+        <includes pattern="iar/samc21e17a_flash.icf"/>
+        <includes pattern="iar/samc21e17a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="samc21/iar">
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21E17A.i79"/>
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21E17A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAMC21.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMC21E17A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="samc21/iar">
+        <includes pattern="config/flashloader/Atmel/samc21e17a/samc21e17a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/samc21e17a/samc21e17a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/samc21e17a/samc21e17a-flash.out"/>
+      </resource>
+      <resource type="scripts.mdbcore" subdir="samc21/../scripts">
+        <includes pattern="dap_cortex-m0plus.py"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMC21G17A">
+      <resource type="atdf" subdir="samc21/atdf">
+        <includes pattern="ATSAMC21G17A.atdf"/>
+      </resource>
+      <resource type="pic" subdir="samc21/edc">
+        <includes pattern="ATSAMC21G17A.PIC"/>
+      </resource>
+      <resource type="svd" subdir="samc21/svd">
+        <includes pattern="ATSAMC21G17A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="samc21/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21.h"/>
+        <includes pattern="samc21g17a.h"/>
+        <includes pattern="system_samc21.h"/>
+        <includes pattern="pio/samc21g17a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="instance/ac.h"/>
+        <includes pattern="instance/adc0.h"/>
+        <includes pattern="instance/adc1.h"/>
+        <includes pattern="instance/can0.h"/>
+        <includes pattern="instance/can1.h"/>
+        <includes pattern="instance/ccl.h"/>
+        <includes pattern="instance/dac.h"/>
+        <includes pattern="instance/divas.h"/>
+        <includes pattern="instance/dmac.h"/>
+        <includes pattern="instance/dsu.h"/>
+        <includes pattern="instance/eic.h"/>
+        <includes pattern="instance/evsys.h"/>
+        <includes pattern="instance/freqm.h"/>
+        <includes pattern="instance/gclk.h"/>
+        <includes pattern="instance/hmatrixhs.h"/>
+        <includes pattern="instance/mclk.h"/>
+        <includes pattern="instance/mtb.h"/>
+        <includes pattern="instance/nvmctrl.h"/>
+        <includes pattern="instance/osc32kctrl.h"/>
+        <includes pattern="instance/oscctrl.h"/>
+        <includes pattern="instance/pac.h"/>
+        <includes pattern="instance/pm.h"/>
+        <includes pattern="instance/port.h"/>
+        <includes pattern="instance/ptc.h"/>
+        <includes pattern="instance/rstc.h"/>
+        <includes pattern="instance/rtc.h"/>
+        <includes pattern="instance/sdadc.h"/>
+        <includes pattern="instance/sercom0.h"/>
+        <includes pattern="instance/sercom1.h"/>
+        <includes pattern="instance/sercom2.h"/>
+        <includes pattern="instance/sercom3.h"/>
+        <includes pattern="instance/sercom4.h"/>
+        <includes pattern="instance/sercom5.h"/>
+        <includes pattern="instance/supc.h"/>
+        <includes pattern="instance/tc0.h"/>
+        <includes pattern="instance/tc1.h"/>
+        <includes pattern="instance/tc2.h"/>
+        <includes pattern="instance/tc3.h"/>
+        <includes pattern="instance/tc4.h"/>
+        <includes pattern="instance/tcc0.h"/>
+        <includes pattern="instance/tcc1.h"/>
+        <includes pattern="instance/tcc2.h"/>
+        <includes pattern="instance/tsens.h"/>
+        <includes pattern="instance/wdt.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21G17A__"/>
+      </resource>
+      <resource type="c.header.mcc" subdir="samc21/include_mcc">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21g17a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/ptc.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="pio/samc21g17a.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21G17A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="samc21/armcc">
+        <includes pattern="Device/SAMC21/Source/ARM/startup_SAMC21.s"/>
+        <includes pattern="Device/SAMC21/Source/system_samc21.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="samc21/keil">
+        <includes pattern="Flash/ATSAMC_128.FLM"/>
+        <includes pattern="Flash/ATSAMC_128_EEPROM.FLM"/>
+        <includes pattern="Flash/FlashOS.h"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvgui"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvopt"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvproj"/>
+        <includes pattern="Flash/ATSAMC/FlashDev.c"/>
+        <includes pattern="Flash/ATSAMC/FlashPrg.c"/>
+        <includes pattern="Flash/ATSAMC/Target.lin"/>
+        <meta key="Flash/ATSAMC_128.FLM" value="start=0x00000000|size=0x20000|default=1"/>
+        <meta key="Flash/ATSAMC_128_EEPROM.FLM" value="start=0x00400000|size=0x01000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="samc21/gcc">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="gcc/startup_samc21.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="samc21/gcc">
+        <includes pattern="gcc/samc21g17a_flash.ld"/>
+        <includes pattern="gcc/samc21g17a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="samc21/iar">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="iar/startup_samc21.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="samc21/iar">
+        <includes pattern="iar/samc21g17a_flash.icf"/>
+        <includes pattern="iar/samc21g17a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="samc21/iar">
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21G17A.i79"/>
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21G17A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAMC21.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMC21G17A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="samc21/iar">
+        <includes pattern="config/flashloader/Atmel/samc21g17a/samc21g17a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/samc21g17a/samc21g17a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/samc21g17a/samc21g17a-flash.out"/>
+      </resource>
+      <resource type="scripts.mdbcore" subdir="samc21/../scripts">
+        <includes pattern="dap_cortex-m0plus.py"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMC21N18A">
+      <resource type="atdf" subdir="samc21n/atdf">
+        <includes pattern="ATSAMC21N18A.atdf"/>
+      </resource>
+      <resource type="pic" subdir="samc21n/edc">
+        <includes pattern="ATSAMC21N18A.PIC"/>
+      </resource>
+      <resource type="svd" subdir="samc21n/svd">
+        <includes pattern="ATSAMC21N18A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="samc21n/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21.h"/>
+        <includes pattern="samc21n18a.h"/>
+        <includes pattern="system_samc21.h"/>
+        <includes pattern="pio/samc21n18a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="instance/ac.h"/>
+        <includes pattern="instance/adc0.h"/>
+        <includes pattern="instance/adc1.h"/>
+        <includes pattern="instance/can0.h"/>
+        <includes pattern="instance/can1.h"/>
+        <includes pattern="instance/ccl.h"/>
+        <includes pattern="instance/dac.h"/>
+        <includes pattern="instance/divas.h"/>
+        <includes pattern="instance/dmac.h"/>
+        <includes pattern="instance/dsu.h"/>
+        <includes pattern="instance/eic.h"/>
+        <includes pattern="instance/evsys.h"/>
+        <includes pattern="instance/freqm.h"/>
+        <includes pattern="instance/gclk.h"/>
+        <includes pattern="instance/hmatrixhs.h"/>
+        <includes pattern="instance/mclk.h"/>
+        <includes pattern="instance/mtb.h"/>
+        <includes pattern="instance/nvmctrl.h"/>
+        <includes pattern="instance/osc32kctrl.h"/>
+        <includes pattern="instance/oscctrl.h"/>
+        <includes pattern="instance/pac.h"/>
+        <includes pattern="instance/pm.h"/>
+        <includes pattern="instance/port.h"/>
+        <includes pattern="instance/ptc.h"/>
+        <includes pattern="instance/rstc.h"/>
+        <includes pattern="instance/rtc.h"/>
+        <includes pattern="instance/sdadc.h"/>
+        <includes pattern="instance/sercom0.h"/>
+        <includes pattern="instance/sercom1.h"/>
+        <includes pattern="instance/sercom2.h"/>
+        <includes pattern="instance/sercom3.h"/>
+        <includes pattern="instance/sercom4.h"/>
+        <includes pattern="instance/sercom5.h"/>
+        <includes pattern="instance/sercom6.h"/>
+        <includes pattern="instance/sercom7.h"/>
+        <includes pattern="instance/supc.h"/>
+        <includes pattern="instance/tc0.h"/>
+        <includes pattern="instance/tc1.h"/>
+        <includes pattern="instance/tc2.h"/>
+        <includes pattern="instance/tc3.h"/>
+        <includes pattern="instance/tc4.h"/>
+        <includes pattern="instance/tc5.h"/>
+        <includes pattern="instance/tc6.h"/>
+        <includes pattern="instance/tc7.h"/>
+        <includes pattern="instance/tcc0.h"/>
+        <includes pattern="instance/tcc1.h"/>
+        <includes pattern="instance/tcc2.h"/>
+        <includes pattern="instance/tsens.h"/>
+        <includes pattern="instance/wdt.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21N18A__"/>
+      </resource>
+      <resource type="c.header.mcc" subdir="samc21n/include_mcc">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21n18a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/ptc.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="pio/samc21n18a.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21N18A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="samc21n/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="samc21n/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="samc21n/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="samc21n/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="samc21n/armcc">
+        <includes pattern="Device/SAMC21N/Source/ARM/startup_SAMC21.s"/>
+        <includes pattern="Device/SAMC21N/Source/system_samc21.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="samc21n/keil">
+        <includes pattern="Flash/ATSAMC_256.FLM"/>
+        <includes pattern="Flash/ATSAMC_256_EEPROM.FLM"/>
+        <includes pattern="Flash/FlashOS.h"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvgui"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvopt"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvproj"/>
+        <includes pattern="Flash/ATSAMC/FlashDev.c"/>
+        <includes pattern="Flash/ATSAMC/FlashPrg.c"/>
+        <includes pattern="Flash/ATSAMC/Target.lin"/>
+        <meta key="Flash/ATSAMC_256.FLM" value="start=0x00000000|size=0x40000|default=1"/>
+        <meta key="Flash/ATSAMC_256_EEPROM.FLM" value="start=0x00400000|size=0x02000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="samc21n/gcc">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="gcc/startup_samc21.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="samc21n/gcc">
+        <includes pattern="gcc/samc21n18a_flash.ld"/>
+        <includes pattern="gcc/samc21n18a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="samc21n/iar">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="iar/startup_samc21.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="samc21n/iar">
+        <includes pattern="iar/samc21n18a_flash.icf"/>
+        <includes pattern="iar/samc21n18a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="samc21n/iar">
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21N18A.i79"/>
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21N18A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMC21N18A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="samc21n/iar">
+        <includes pattern="config/flashloader/Atmel/samc21n18a/samc21n18a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/samc21n18a/samc21n18a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/samc21n18a/samc21n18a-flash.out"/>
+      </resource>
+      <resource type="scripts.mdbcore" subdir="samc21n/../scripts">
+        <includes pattern="dap_cortex-m0plus.py"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMC21J17AU">
+      <resource type="atdf" subdir="samc21/atdf">
+        <includes pattern="ATSAMC21J17AU.atdf"/>
+      </resource>
+      <resource type="pic" subdir="samc21/edc">
+        <includes pattern="ATSAMC21J17AU.PIC"/>
+      </resource>
+      <resource type="svd" subdir="samc21/svd">
+        <includes pattern="ATSAMC21J17AU.svd"/>
+      </resource>
+      <resource type="c.header" subdir="samc21/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21.h"/>
+        <includes pattern="samc21j17au.h"/>
+        <includes pattern="system_samc21.h"/>
+        <includes pattern="pio/samc21j17au.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="instance/ac.h"/>
+        <includes pattern="instance/adc0.h"/>
+        <includes pattern="instance/adc1.h"/>
+        <includes pattern="instance/can0.h"/>
+        <includes pattern="instance/can1.h"/>
+        <includes pattern="instance/ccl.h"/>
+        <includes pattern="instance/dac.h"/>
+        <includes pattern="instance/divas.h"/>
+        <includes pattern="instance/dmac.h"/>
+        <includes pattern="instance/dsu.h"/>
+        <includes pattern="instance/eic.h"/>
+        <includes pattern="instance/evsys.h"/>
+        <includes pattern="instance/freqm.h"/>
+        <includes pattern="instance/gclk.h"/>
+        <includes pattern="instance/hmatrixhs.h"/>
+        <includes pattern="instance/mclk.h"/>
+        <includes pattern="instance/mtb.h"/>
+        <includes pattern="instance/nvmctrl.h"/>
+        <includes pattern="instance/osc32kctrl.h"/>
+        <includes pattern="instance/oscctrl.h"/>
+        <includes pattern="instance/pac.h"/>
+        <includes pattern="instance/pm.h"/>
+        <includes pattern="instance/port.h"/>
+        <includes pattern="instance/ptc.h"/>
+        <includes pattern="instance/rstc.h"/>
+        <includes pattern="instance/rtc.h"/>
+        <includes pattern="instance/sdadc.h"/>
+        <includes pattern="instance/sercom0.h"/>
+        <includes pattern="instance/sercom1.h"/>
+        <includes pattern="instance/sercom2.h"/>
+        <includes pattern="instance/sercom3.h"/>
+        <includes pattern="instance/sercom4.h"/>
+        <includes pattern="instance/sercom5.h"/>
+        <includes pattern="instance/supc.h"/>
+        <includes pattern="instance/tc0.h"/>
+        <includes pattern="instance/tc1.h"/>
+        <includes pattern="instance/tc2.h"/>
+        <includes pattern="instance/tc3.h"/>
+        <includes pattern="instance/tc4.h"/>
+        <includes pattern="instance/tcc0.h"/>
+        <includes pattern="instance/tcc1.h"/>
+        <includes pattern="instance/tcc2.h"/>
+        <includes pattern="instance/tsens.h"/>
+        <includes pattern="instance/wdt.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21J17AU__"/>
+      </resource>
+      <resource type="c.header.mcc" subdir="samc21/include_mcc">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21j17au.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/ptc.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="pio/samc21j17au.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21J17AU__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="samc21/armcc">
+        <includes pattern="Device/SAMC21/Source/ARM/startup_SAMC21.s"/>
+        <includes pattern="Device/SAMC21/Source/system_samc21.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="samc21/keil">
+        <includes pattern="Flash/ATSAMC_128.FLM"/>
+        <includes pattern="Flash/ATSAMC_128_EEPROM.FLM"/>
+        <includes pattern="Flash/FlashOS.h"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvgui"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvopt"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvproj"/>
+        <includes pattern="Flash/ATSAMC/FlashDev.c"/>
+        <includes pattern="Flash/ATSAMC/FlashPrg.c"/>
+        <includes pattern="Flash/ATSAMC/Target.lin"/>
+        <meta key="Flash/ATSAMC_128.FLM" value="start=0x00000000|size=0x20000|default=1"/>
+        <meta key="Flash/ATSAMC_128_EEPROM.FLM" value="start=0x00400000|size=0x01000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="samc21/gcc">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="gcc/startup_samc21.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="samc21/gcc">
+        <includes pattern="gcc/samc21j17au_flash.ld"/>
+        <includes pattern="gcc/samc21j17au_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="samc21/iar">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="iar/startup_samc21.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="samc21/iar">
+        <includes pattern="iar/samc21j17au_flash.icf"/>
+        <includes pattern="iar/samc21j17au_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="samc21/iar">
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21J17AU.i79"/>
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21J17AU.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAMC21.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMC21J17AU.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="samc21/iar">
+        <includes pattern="config/flashloader/Atmel/samc21j17au/samc21j17au-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/samc21j17au/samc21j17au-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/samc21j17au/samc21j17au-flash.out"/>
+      </resource>
+      <resource type="scripts.mdbcore" subdir="samc21/../scripts">
+        <includes pattern="dap_cortex-m0plus.py"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMC21G16A">
+      <resource type="atdf" subdir="samc21/atdf">
+        <includes pattern="ATSAMC21G16A.atdf"/>
+      </resource>
+      <resource type="pic" subdir="samc21/edc">
+        <includes pattern="ATSAMC21G16A.PIC"/>
+      </resource>
+      <resource type="svd" subdir="samc21/svd">
+        <includes pattern="ATSAMC21G16A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="samc21/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21.h"/>
+        <includes pattern="samc21g16a.h"/>
+        <includes pattern="system_samc21.h"/>
+        <includes pattern="pio/samc21g16a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="instance/ac.h"/>
+        <includes pattern="instance/adc0.h"/>
+        <includes pattern="instance/adc1.h"/>
+        <includes pattern="instance/can0.h"/>
+        <includes pattern="instance/can1.h"/>
+        <includes pattern="instance/ccl.h"/>
+        <includes pattern="instance/dac.h"/>
+        <includes pattern="instance/divas.h"/>
+        <includes pattern="instance/dmac.h"/>
+        <includes pattern="instance/dsu.h"/>
+        <includes pattern="instance/eic.h"/>
+        <includes pattern="instance/evsys.h"/>
+        <includes pattern="instance/freqm.h"/>
+        <includes pattern="instance/gclk.h"/>
+        <includes pattern="instance/hmatrixhs.h"/>
+        <includes pattern="instance/mclk.h"/>
+        <includes pattern="instance/mtb.h"/>
+        <includes pattern="instance/nvmctrl.h"/>
+        <includes pattern="instance/osc32kctrl.h"/>
+        <includes pattern="instance/oscctrl.h"/>
+        <includes pattern="instance/pac.h"/>
+        <includes pattern="instance/pm.h"/>
+        <includes pattern="instance/port.h"/>
+        <includes pattern="instance/ptc.h"/>
+        <includes pattern="instance/rstc.h"/>
+        <includes pattern="instance/rtc.h"/>
+        <includes pattern="instance/sdadc.h"/>
+        <includes pattern="instance/sercom0.h"/>
+        <includes pattern="instance/sercom1.h"/>
+        <includes pattern="instance/sercom2.h"/>
+        <includes pattern="instance/sercom3.h"/>
+        <includes pattern="instance/sercom4.h"/>
+        <includes pattern="instance/sercom5.h"/>
+        <includes pattern="instance/supc.h"/>
+        <includes pattern="instance/tc0.h"/>
+        <includes pattern="instance/tc1.h"/>
+        <includes pattern="instance/tc2.h"/>
+        <includes pattern="instance/tc3.h"/>
+        <includes pattern="instance/tc4.h"/>
+        <includes pattern="instance/tcc0.h"/>
+        <includes pattern="instance/tcc1.h"/>
+        <includes pattern="instance/tcc2.h"/>
+        <includes pattern="instance/tsens.h"/>
+        <includes pattern="instance/wdt.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21G16A__"/>
+      </resource>
+      <resource type="c.header.mcc" subdir="samc21/include_mcc">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21g16a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/ptc.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="pio/samc21g16a.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21G16A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="samc21/armcc">
+        <includes pattern="Device/SAMC21/Source/ARM/startup_SAMC21.s"/>
+        <includes pattern="Device/SAMC21/Source/system_samc21.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="samc21/keil">
+        <includes pattern="Flash/ATSAMC_64.FLM"/>
+        <includes pattern="Flash/ATSAMC_64_EEPROM.FLM"/>
+        <includes pattern="Flash/FlashOS.h"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvgui"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvopt"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvproj"/>
+        <includes pattern="Flash/ATSAMC/FlashDev.c"/>
+        <includes pattern="Flash/ATSAMC/FlashPrg.c"/>
+        <includes pattern="Flash/ATSAMC/Target.lin"/>
+        <meta key="Flash/ATSAMC_64.FLM" value="start=0x00000000|size=0x10000|default=1"/>
+        <meta key="Flash/ATSAMC_64_EEPROM.FLM" value="start=0x00400000|size=0x00800|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="samc21/gcc">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="gcc/startup_samc21.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="samc21/gcc">
+        <includes pattern="gcc/samc21g16a_flash.ld"/>
+        <includes pattern="gcc/samc21g16a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="samc21/iar">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="iar/startup_samc21.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="samc21/iar">
+        <includes pattern="iar/samc21g16a_flash.icf"/>
+        <includes pattern="iar/samc21g16a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="samc21/iar">
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21G16A.i79"/>
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21G16A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAMC21.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMC21G16A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="samc21/iar">
+        <includes pattern="config/flashloader/Atmel/samc21g16a/samc21g16a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/samc21g16a/samc21g16a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/samc21g16a/samc21g16a-flash.out"/>
+      </resource>
+      <resource type="scripts.mdbcore" subdir="samc21/../scripts">
+        <includes pattern="dap_cortex-m0plus.py"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMC21J16A">
+      <resource type="atdf" subdir="samc21/atdf">
+        <includes pattern="ATSAMC21J16A.atdf"/>
+      </resource>
+      <resource type="pic" subdir="samc21/edc">
+        <includes pattern="ATSAMC21J16A.PIC"/>
+      </resource>
+      <resource type="svd" subdir="samc21/svd">
+        <includes pattern="ATSAMC21J16A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="samc21/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21.h"/>
+        <includes pattern="samc21j16a.h"/>
+        <includes pattern="system_samc21.h"/>
+        <includes pattern="pio/samc21j16a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="instance/ac.h"/>
+        <includes pattern="instance/adc0.h"/>
+        <includes pattern="instance/adc1.h"/>
+        <includes pattern="instance/can0.h"/>
+        <includes pattern="instance/can1.h"/>
+        <includes pattern="instance/ccl.h"/>
+        <includes pattern="instance/dac.h"/>
+        <includes pattern="instance/divas.h"/>
+        <includes pattern="instance/dmac.h"/>
+        <includes pattern="instance/dsu.h"/>
+        <includes pattern="instance/eic.h"/>
+        <includes pattern="instance/evsys.h"/>
+        <includes pattern="instance/freqm.h"/>
+        <includes pattern="instance/gclk.h"/>
+        <includes pattern="instance/hmatrixhs.h"/>
+        <includes pattern="instance/mclk.h"/>
+        <includes pattern="instance/mtb.h"/>
+        <includes pattern="instance/nvmctrl.h"/>
+        <includes pattern="instance/osc32kctrl.h"/>
+        <includes pattern="instance/oscctrl.h"/>
+        <includes pattern="instance/pac.h"/>
+        <includes pattern="instance/pm.h"/>
+        <includes pattern="instance/port.h"/>
+        <includes pattern="instance/ptc.h"/>
+        <includes pattern="instance/rstc.h"/>
+        <includes pattern="instance/rtc.h"/>
+        <includes pattern="instance/sdadc.h"/>
+        <includes pattern="instance/sercom0.h"/>
+        <includes pattern="instance/sercom1.h"/>
+        <includes pattern="instance/sercom2.h"/>
+        <includes pattern="instance/sercom3.h"/>
+        <includes pattern="instance/sercom4.h"/>
+        <includes pattern="instance/sercom5.h"/>
+        <includes pattern="instance/supc.h"/>
+        <includes pattern="instance/tc0.h"/>
+        <includes pattern="instance/tc1.h"/>
+        <includes pattern="instance/tc2.h"/>
+        <includes pattern="instance/tc3.h"/>
+        <includes pattern="instance/tc4.h"/>
+        <includes pattern="instance/tcc0.h"/>
+        <includes pattern="instance/tcc1.h"/>
+        <includes pattern="instance/tcc2.h"/>
+        <includes pattern="instance/tsens.h"/>
+        <includes pattern="instance/wdt.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21J16A__"/>
+      </resource>
+      <resource type="c.header.mcc" subdir="samc21/include_mcc">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21j16a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/ptc.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="pio/samc21j16a.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21J16A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="samc21/armcc">
+        <includes pattern="Device/SAMC21/Source/ARM/startup_SAMC21.s"/>
+        <includes pattern="Device/SAMC21/Source/system_samc21.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="samc21/keil">
+        <includes pattern="Flash/ATSAMC_64.FLM"/>
+        <includes pattern="Flash/ATSAMC_64_EEPROM.FLM"/>
+        <includes pattern="Flash/FlashOS.h"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvgui"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvopt"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvproj"/>
+        <includes pattern="Flash/ATSAMC/FlashDev.c"/>
+        <includes pattern="Flash/ATSAMC/FlashPrg.c"/>
+        <includes pattern="Flash/ATSAMC/Target.lin"/>
+        <meta key="Flash/ATSAMC_64.FLM" value="start=0x00000000|size=0x10000|default=1"/>
+        <meta key="Flash/ATSAMC_64_EEPROM.FLM" value="start=0x00400000|size=0x00800|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="samc21/gcc">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="gcc/startup_samc21.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="samc21/gcc">
+        <includes pattern="gcc/samc21j16a_flash.ld"/>
+        <includes pattern="gcc/samc21j16a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="samc21/iar">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="iar/startup_samc21.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="samc21/iar">
+        <includes pattern="iar/samc21j16a_flash.icf"/>
+        <includes pattern="iar/samc21j16a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="samc21/iar">
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21J16A.i79"/>
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21J16A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAMC21.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMC21J16A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="samc21/iar">
+        <includes pattern="config/flashloader/Atmel/samc21j16a/samc21j16a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/samc21j16a/samc21j16a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/samc21j16a/samc21j16a-flash.out"/>
+      </resource>
+      <resource type="scripts.mdbcore" subdir="samc21/../scripts">
+        <includes pattern="dap_cortex-m0plus.py"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMC21G15A">
+      <resource type="atdf" subdir="samc21/atdf">
+        <includes pattern="ATSAMC21G15A.atdf"/>
+      </resource>
+      <resource type="pic" subdir="samc21/edc">
+        <includes pattern="ATSAMC21G15A.PIC"/>
+      </resource>
+      <resource type="svd" subdir="samc21/svd">
+        <includes pattern="ATSAMC21G15A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="samc21/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21.h"/>
+        <includes pattern="samc21g15a.h"/>
+        <includes pattern="system_samc21.h"/>
+        <includes pattern="pio/samc21g15a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="instance/ac.h"/>
+        <includes pattern="instance/adc0.h"/>
+        <includes pattern="instance/adc1.h"/>
+        <includes pattern="instance/can0.h"/>
+        <includes pattern="instance/can1.h"/>
+        <includes pattern="instance/ccl.h"/>
+        <includes pattern="instance/dac.h"/>
+        <includes pattern="instance/divas.h"/>
+        <includes pattern="instance/dmac.h"/>
+        <includes pattern="instance/dsu.h"/>
+        <includes pattern="instance/eic.h"/>
+        <includes pattern="instance/evsys.h"/>
+        <includes pattern="instance/freqm.h"/>
+        <includes pattern="instance/gclk.h"/>
+        <includes pattern="instance/hmatrixhs.h"/>
+        <includes pattern="instance/mclk.h"/>
+        <includes pattern="instance/mtb.h"/>
+        <includes pattern="instance/nvmctrl.h"/>
+        <includes pattern="instance/osc32kctrl.h"/>
+        <includes pattern="instance/oscctrl.h"/>
+        <includes pattern="instance/pac.h"/>
+        <includes pattern="instance/pm.h"/>
+        <includes pattern="instance/port.h"/>
+        <includes pattern="instance/ptc.h"/>
+        <includes pattern="instance/rstc.h"/>
+        <includes pattern="instance/rtc.h"/>
+        <includes pattern="instance/sdadc.h"/>
+        <includes pattern="instance/sercom0.h"/>
+        <includes pattern="instance/sercom1.h"/>
+        <includes pattern="instance/sercom2.h"/>
+        <includes pattern="instance/sercom3.h"/>
+        <includes pattern="instance/sercom4.h"/>
+        <includes pattern="instance/sercom5.h"/>
+        <includes pattern="instance/supc.h"/>
+        <includes pattern="instance/tc0.h"/>
+        <includes pattern="instance/tc1.h"/>
+        <includes pattern="instance/tc2.h"/>
+        <includes pattern="instance/tc3.h"/>
+        <includes pattern="instance/tc4.h"/>
+        <includes pattern="instance/tcc0.h"/>
+        <includes pattern="instance/tcc1.h"/>
+        <includes pattern="instance/tcc2.h"/>
+        <includes pattern="instance/tsens.h"/>
+        <includes pattern="instance/wdt.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21G15A__"/>
+      </resource>
+      <resource type="c.header.mcc" subdir="samc21/include_mcc">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21g15a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/ptc.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="pio/samc21g15a.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21G15A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="samc21/armcc">
+        <includes pattern="Device/SAMC21/Source/ARM/startup_SAMC21.s"/>
+        <includes pattern="Device/SAMC21/Source/system_samc21.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="samc21/keil">
+        <includes pattern="Flash/ATSAMC_32.FLM"/>
+        <includes pattern="Flash/ATSAMC_32_EEPROM.FLM"/>
+        <includes pattern="Flash/FlashOS.h"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvgui"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvopt"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvproj"/>
+        <includes pattern="Flash/ATSAMC/FlashDev.c"/>
+        <includes pattern="Flash/ATSAMC/FlashPrg.c"/>
+        <includes pattern="Flash/ATSAMC/Target.lin"/>
+        <meta key="Flash/ATSAMC_32.FLM" value="start=0x00000000|size=0x08000|default=1"/>
+        <meta key="Flash/ATSAMC_32_EEPROM.FLM" value="start=0x00400000|size=0x00400|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="samc21/gcc">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="gcc/startup_samc21.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="samc21/gcc">
+        <includes pattern="gcc/samc21g15a_flash.ld"/>
+        <includes pattern="gcc/samc21g15a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="samc21/iar">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="iar/startup_samc21.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="samc21/iar">
+        <includes pattern="iar/samc21g15a_flash.icf"/>
+        <includes pattern="iar/samc21g15a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="samc21/iar">
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21G15A.i79"/>
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21G15A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAMC21.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMC21G15A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="samc21/iar">
+        <includes pattern="config/flashloader/Atmel/samc21g15a/samc21g15a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/samc21g15a/samc21g15a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/samc21g15a/samc21g15a-flash.out"/>
+      </resource>
+      <resource type="scripts.mdbcore" subdir="samc21/../scripts">
+        <includes pattern="dap_cortex-m0plus.py"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMC21G18A">
+      <resource type="atdf" subdir="samc21/atdf">
+        <includes pattern="ATSAMC21G18A.atdf"/>
+      </resource>
+      <resource type="pic" subdir="samc21/edc">
+        <includes pattern="ATSAMC21G18A.PIC"/>
+      </resource>
+      <resource type="svd" subdir="samc21/svd">
+        <includes pattern="ATSAMC21G18A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="samc21/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21.h"/>
+        <includes pattern="samc21g18a.h"/>
+        <includes pattern="system_samc21.h"/>
+        <includes pattern="pio/samc21g18a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="instance/ac.h"/>
+        <includes pattern="instance/adc0.h"/>
+        <includes pattern="instance/adc1.h"/>
+        <includes pattern="instance/can0.h"/>
+        <includes pattern="instance/can1.h"/>
+        <includes pattern="instance/ccl.h"/>
+        <includes pattern="instance/dac.h"/>
+        <includes pattern="instance/divas.h"/>
+        <includes pattern="instance/dmac.h"/>
+        <includes pattern="instance/dsu.h"/>
+        <includes pattern="instance/eic.h"/>
+        <includes pattern="instance/evsys.h"/>
+        <includes pattern="instance/freqm.h"/>
+        <includes pattern="instance/gclk.h"/>
+        <includes pattern="instance/hmatrixhs.h"/>
+        <includes pattern="instance/mclk.h"/>
+        <includes pattern="instance/mtb.h"/>
+        <includes pattern="instance/nvmctrl.h"/>
+        <includes pattern="instance/osc32kctrl.h"/>
+        <includes pattern="instance/oscctrl.h"/>
+        <includes pattern="instance/pac.h"/>
+        <includes pattern="instance/pm.h"/>
+        <includes pattern="instance/port.h"/>
+        <includes pattern="instance/ptc.h"/>
+        <includes pattern="instance/rstc.h"/>
+        <includes pattern="instance/rtc.h"/>
+        <includes pattern="instance/sdadc.h"/>
+        <includes pattern="instance/sercom0.h"/>
+        <includes pattern="instance/sercom1.h"/>
+        <includes pattern="instance/sercom2.h"/>
+        <includes pattern="instance/sercom3.h"/>
+        <includes pattern="instance/sercom4.h"/>
+        <includes pattern="instance/sercom5.h"/>
+        <includes pattern="instance/supc.h"/>
+        <includes pattern="instance/tc0.h"/>
+        <includes pattern="instance/tc1.h"/>
+        <includes pattern="instance/tc2.h"/>
+        <includes pattern="instance/tc3.h"/>
+        <includes pattern="instance/tc4.h"/>
+        <includes pattern="instance/tcc0.h"/>
+        <includes pattern="instance/tcc1.h"/>
+        <includes pattern="instance/tcc2.h"/>
+        <includes pattern="instance/tsens.h"/>
+        <includes pattern="instance/wdt.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21G18A__"/>
+      </resource>
+      <resource type="c.header.mcc" subdir="samc21/include_mcc">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21g18a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/ptc.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="pio/samc21g18a.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21G18A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="samc21/armcc">
+        <includes pattern="Device/SAMC21/Source/ARM/startup_SAMC21.s"/>
+        <includes pattern="Device/SAMC21/Source/system_samc21.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="samc21/keil">
+        <includes pattern="Flash/ATSAMC_256.FLM"/>
+        <includes pattern="Flash/ATSAMC_256_EEPROM.FLM"/>
+        <includes pattern="Flash/FlashOS.h"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvgui"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvopt"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvproj"/>
+        <includes pattern="Flash/ATSAMC/FlashDev.c"/>
+        <includes pattern="Flash/ATSAMC/FlashPrg.c"/>
+        <includes pattern="Flash/ATSAMC/Target.lin"/>
+        <meta key="Flash/ATSAMC_256.FLM" value="start=0x00000000|size=0x40000|default=1"/>
+        <meta key="Flash/ATSAMC_256_EEPROM.FLM" value="start=0x00400000|size=0x02000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="samc21/gcc">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="gcc/startup_samc21.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="samc21/gcc">
+        <includes pattern="gcc/samc21g18a_flash.ld"/>
+        <includes pattern="gcc/samc21g18a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="samc21/iar">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="iar/startup_samc21.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="samc21/iar">
+        <includes pattern="iar/samc21g18a_flash.icf"/>
+        <includes pattern="iar/samc21g18a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="samc21/iar">
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21G18A.i79"/>
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21G18A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAMC21.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMC21G18A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="samc21/iar">
+        <includes pattern="config/flashloader/Atmel/samc21g18a/samc21g18a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/samc21g18a/samc21g18a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/samc21g18a/samc21g18a-flash.out"/>
+      </resource>
+      <resource type="scripts.mdbcore" subdir="samc21/../scripts">
+        <includes pattern="dap_cortex-m0plus.py"/>
+      </resource>
+    </resources>
+    <resources target="ATSAMC21J17A">
+      <resource type="atdf" subdir="samc21/atdf">
+        <includes pattern="ATSAMC21J17A.atdf"/>
+      </resource>
+      <resource type="pic" subdir="samc21/edc">
+        <includes pattern="ATSAMC21J17A.PIC"/>
+      </resource>
+      <resource type="svd" subdir="samc21/svd">
+        <includes pattern="ATSAMC21J17A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="samc21/include">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21.h"/>
+        <includes pattern="samc21j17a.h"/>
+        <includes pattern="system_samc21.h"/>
+        <includes pattern="pio/samc21j17a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="instance/ac.h"/>
+        <includes pattern="instance/adc0.h"/>
+        <includes pattern="instance/adc1.h"/>
+        <includes pattern="instance/can0.h"/>
+        <includes pattern="instance/can1.h"/>
+        <includes pattern="instance/ccl.h"/>
+        <includes pattern="instance/dac.h"/>
+        <includes pattern="instance/divas.h"/>
+        <includes pattern="instance/dmac.h"/>
+        <includes pattern="instance/dsu.h"/>
+        <includes pattern="instance/eic.h"/>
+        <includes pattern="instance/evsys.h"/>
+        <includes pattern="instance/freqm.h"/>
+        <includes pattern="instance/gclk.h"/>
+        <includes pattern="instance/hmatrixhs.h"/>
+        <includes pattern="instance/mclk.h"/>
+        <includes pattern="instance/mtb.h"/>
+        <includes pattern="instance/nvmctrl.h"/>
+        <includes pattern="instance/osc32kctrl.h"/>
+        <includes pattern="instance/oscctrl.h"/>
+        <includes pattern="instance/pac.h"/>
+        <includes pattern="instance/pm.h"/>
+        <includes pattern="instance/port.h"/>
+        <includes pattern="instance/ptc.h"/>
+        <includes pattern="instance/rstc.h"/>
+        <includes pattern="instance/rtc.h"/>
+        <includes pattern="instance/sdadc.h"/>
+        <includes pattern="instance/sercom0.h"/>
+        <includes pattern="instance/sercom1.h"/>
+        <includes pattern="instance/sercom2.h"/>
+        <includes pattern="instance/sercom3.h"/>
+        <includes pattern="instance/sercom4.h"/>
+        <includes pattern="instance/sercom5.h"/>
+        <includes pattern="instance/supc.h"/>
+        <includes pattern="instance/tc0.h"/>
+        <includes pattern="instance/tc1.h"/>
+        <includes pattern="instance/tc2.h"/>
+        <includes pattern="instance/tc3.h"/>
+        <includes pattern="instance/tc4.h"/>
+        <includes pattern="instance/tcc0.h"/>
+        <includes pattern="instance/tcc1.h"/>
+        <includes pattern="instance/tcc2.h"/>
+        <includes pattern="instance/tsens.h"/>
+        <includes pattern="instance/wdt.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21J17A__"/>
+      </resource>
+      <resource type="c.header.mcc" subdir="samc21/include_mcc">
+        <includes pattern="sam.h"/>
+        <includes pattern="samc21j17a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/divas.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/mtb.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/ptc.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdadc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/tsens.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="pio/samc21j17a.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAMC21J17A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="samc21/templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="samc21/templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="samc21/armcc">
+        <includes pattern="Device/SAMC21/Source/ARM/startup_SAMC21.s"/>
+        <includes pattern="Device/SAMC21/Source/system_samc21.c"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="samc21/keil">
+        <includes pattern="Flash/ATSAMC_128.FLM"/>
+        <includes pattern="Flash/ATSAMC_128_EEPROM.FLM"/>
+        <includes pattern="Flash/FlashOS.h"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvgui"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvopt"/>
+        <includes pattern="Flash/ATSAMC/ATSAMC.uvproj"/>
+        <includes pattern="Flash/ATSAMC/FlashDev.c"/>
+        <includes pattern="Flash/ATSAMC/FlashPrg.c"/>
+        <includes pattern="Flash/ATSAMC/Target.lin"/>
+        <meta key="Flash/ATSAMC_128.FLM" value="start=0x00000000|size=0x20000|default=1"/>
+        <meta key="Flash/ATSAMC_128_EEPROM.FLM" value="start=0x00400000|size=0x01000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="samc21/gcc">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="gcc/startup_samc21.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="samc21/gcc">
+        <includes pattern="gcc/samc21j17a_flash.ld"/>
+        <includes pattern="gcc/samc21j17a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="samc21/iar">
+        <includes pattern="system_samc21.c"/>
+        <includes pattern="iar/startup_samc21.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="samc21/iar">
+        <includes pattern="iar/samc21j17a_flash.icf"/>
+        <includes pattern="iar/samc21j17a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="samc21/iar">
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21J17A.i79"/>
+        <includes pattern="config/devices/Atmel/SAMC/ATSAMC21/ATSAMC21J17A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAMC21.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAMC21J17A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="samc21/iar">
+        <includes pattern="config/flashloader/Atmel/samc21j17a/samc21j17a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/samc21j17a/samc21j17a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/samc21j17a/samc21j17a-flash.out"/>
+      </resource>
+      <resource type="scripts.mdbcore" subdir="samc21/../scripts">
+        <includes pattern="dap_cortex-m0plus.py"/>
+      </resource>
+    </resources>
+  </content>
+  <pdsc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" vendor="Atmel">
+        <releases>
+            <release version="1.2.BUILDNUMBER">Fix SVD. Added python programming and debugging scripts for MPLAB X.</release>
+            <release version="1.1.144">Added ATSAMC21J15A.</release>
+            <release version="1.1.104">Added ATSAMC21N17A and ATSAMC21N18A.</release>
+            <release version="1.1.103">Removed warnings for some component and PIO headers. OSCCTRL fixes. </release>
+            <release version="1.1.93">Added SAMC21JnAU. Fixed GNU/IAR assembler issues. Files now under Apache license.</release>
+            <release version="1.0.44">Updated documentation links.</release>
+            <release version="1.0.37">Initial release.</release>
+        </releases>
+    </pdsc>
+</package>

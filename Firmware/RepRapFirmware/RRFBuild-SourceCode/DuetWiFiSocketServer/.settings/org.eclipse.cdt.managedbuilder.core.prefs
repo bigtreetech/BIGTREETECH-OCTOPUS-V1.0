@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.cross.exe.release.385783058/CPATH/delimiter=;
+environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.cross.exe.release.385783058/CPATH/operation=remove
+environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.cross.exe.release.385783058/CPLUS_INCLUDE_PATH/delimiter=;
+environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.cross.exe.release.385783058/CPLUS_INCLUDE_PATH/operation=remove
+environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.cross.exe.release.385783058/C_INCLUDE_PATH/delimiter=;
+environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.cross.exe.release.385783058/C_INCLUDE_PATH/operation=remove
+environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.cross.exe.release.385783058/append=true
+environment/buildEnvironmentInclude/cdt.managedbuild.config.gnu.cross.exe.release.385783058/appendContributed=true
+environment/buildEnvironmentLibrary/cdt.managedbuild.config.gnu.cross.exe.release.385783058/LIBRARY_PATH/delimiter=;
+environment/buildEnvironmentLibrary/cdt.managedbuild.config.gnu.cross.exe.release.385783058/LIBRARY_PATH/operation=remove
+environment/buildEnvironmentLibrary/cdt.managedbuild.config.gnu.cross.exe.release.385783058/append=true
+environment/buildEnvironmentLibrary/cdt.managedbuild.config.gnu.cross.exe.release.385783058/appendContributed=true

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<optionMenuItem>
+  <tag>ATSAMC21J18AU</tag>
+  <display>Atmel ATSAMC21J18AU</display>
+  <data>$CUR_DIR$\ATSAMC21J18AU.i79</data>
+</optionMenuItem>

@@ -1,0 +1,212 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build LPC SBC firmware",
+        "type": "shell",
+        "command": "make CORE=LPC NETWORK=SBC all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },      
+      {
+        "label": "build LPC WiFi firmware",
+        "type": "shell",
+        "command": "make CORE=LPC NETWORK=ESP8266WIFI all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },      
+      {
+        "label": "build LPC Ethernet firmware",
+        "type": "shell",
+        "command": "make CORE=LPC NETWORK=ETHERNET TMC22XX=false all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },      
+      {
+        "label": "build LPC NoNet firmware",
+        "type": "shell",
+        "command": "make CORE=LPC NETWORK=NONE all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },      
+      {
+        "label": "build STM SBC firmware",
+        "type": "shell",
+        "command": "make CORE=STM32F4 NETWORK=SBC all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },      
+      {
+        "label": "build STM WiFi firmware",
+        "type": "shell",
+        "command": "make CORE=STM32F4 NETWORK=ESP8266WIFI all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },      
+      {
+        "label": "clean firmware",
+        "type": "shell",
+        "command": "make clean distclean",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },
+      {
+        "label": "upload firmware",
+        "type": "shell",
+        "command": "make upload",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      }
+
+    ]
+  }

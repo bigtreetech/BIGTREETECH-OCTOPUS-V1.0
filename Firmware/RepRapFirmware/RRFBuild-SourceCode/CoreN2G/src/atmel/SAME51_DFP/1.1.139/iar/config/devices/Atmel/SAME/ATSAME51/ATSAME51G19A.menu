@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<optionMenuItem>
+  <tag>ATSAME51G19A</tag>
+  <display>Atmel ATSAME51G19A</display>
+  <data>$CUR_DIR$\ATSAME51G19A.i79</data>
+</optionMenuItem>

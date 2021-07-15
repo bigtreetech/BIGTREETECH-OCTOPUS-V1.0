@@ -1,0 +1,1431 @@
+<?xml version='1.0' encoding='ASCII'?>
+<package schemaVersion="1.0">
+  <content>
+    <resources target="ATSAME51J19A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAME51J19A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAME51J19A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="same51.h"/>
+        <includes pattern="same51j19a.h"/>
+        <includes pattern="system_same51.h"/>
+        <includes pattern="pio/same51j19a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/cmcc.h"/>
+        <includes pattern="component/pdec.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/icm.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/pcc.h"/>
+        <includes pattern="component/sdhc.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/aes.h"/>
+        <includes pattern="component/i2s.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/ramecc.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/usb.h"/>
+        <includes pattern="component/trng.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/qspi.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="instance/tcc3.h"/>
+        <includes pattern="instance/sercom3.h"/>
+        <includes pattern="instance/ac.h"/>
+        <includes pattern="instance/osc32kctrl.h"/>
+        <includes pattern="instance/wdt.h"/>
+        <includes pattern="instance/sdhc1.h"/>
+        <includes pattern="instance/gclk.h"/>
+        <includes pattern="instance/tcc4.h"/>
+        <includes pattern="instance/tc4.h"/>
+        <includes pattern="instance/oscctrl.h"/>
+        <includes pattern="instance/supc.h"/>
+        <includes pattern="instance/cmcc.h"/>
+        <includes pattern="instance/tcc2.h"/>
+        <includes pattern="instance/pukcc.h"/>
+        <includes pattern="instance/pdec.h"/>
+        <includes pattern="instance/sdhc0.h"/>
+        <includes pattern="instance/sercom4.h"/>
+        <includes pattern="instance/rstc.h"/>
+        <includes pattern="instance/icm.h"/>
+        <includes pattern="instance/can0.h"/>
+        <includes pattern="instance/dac.h"/>
+        <includes pattern="instance/pm.h"/>
+        <includes pattern="instance/dsu.h"/>
+        <includes pattern="instance/pcc.h"/>
+        <includes pattern="instance/pac.h"/>
+        <includes pattern="instance/tc0.h"/>
+        <includes pattern="instance/tcc1.h"/>
+        <includes pattern="instance/tc5.h"/>
+        <includes pattern="instance/aes.h"/>
+        <includes pattern="instance/i2s.h"/>
+        <includes pattern="instance/sercom1.h"/>
+        <includes pattern="instance/tc1.h"/>
+        <includes pattern="instance/freqm.h"/>
+        <includes pattern="instance/ramecc.h"/>
+        <includes pattern="instance/can1.h"/>
+        <includes pattern="instance/evsys.h"/>
+        <includes pattern="instance/adc1.h"/>
+        <includes pattern="instance/sercom6.h"/>
+        <includes pattern="instance/sercom0.h"/>
+        <includes pattern="instance/ccl.h"/>
+        <includes pattern="instance/usb.h"/>
+        <includes pattern="instance/trng.h"/>
+        <includes pattern="instance/tcc0.h"/>
+        <includes pattern="instance/sercom2.h"/>
+        <includes pattern="instance/adc0.h"/>
+        <includes pattern="instance/sercom7.h"/>
+        <includes pattern="instance/qspi.h"/>
+        <includes pattern="instance/rtc.h"/>
+        <includes pattern="instance/tc7.h"/>
+        <includes pattern="instance/nvmctrl.h"/>
+        <includes pattern="instance/tc3.h"/>
+        <includes pattern="instance/port.h"/>
+        <includes pattern="instance/sercom5.h"/>
+        <includes pattern="instance/eic.h"/>
+        <includes pattern="instance/mclk.h"/>
+        <includes pattern="instance/tc6.h"/>
+        <includes pattern="instance/tc2.h"/>
+        <includes pattern="instance/dmac.h"/>
+        <includes pattern="instance/hmatrix.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAME51J19A__"/>
+      </resource>
+      <resource type="c.header.mcc" subdir="include_mcc">
+        <includes pattern="sam.h"/>
+        <includes pattern="same51j19a.h"/>
+        <includes pattern="system_same51.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/aes.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/cmcc.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/icm.h"/>
+        <includes pattern="component/i2s.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pcc.h"/>
+        <includes pattern="component/pdec.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/pukcc.h"/>
+        <includes pattern="component/qspi.h"/>
+        <includes pattern="component/ramecc.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdhc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/trng.h"/>
+        <includes pattern="component/usb.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="pio/same51j19a.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAME51J19A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="arm_addon/armcc/system_same51.c"/>
+        <includes pattern="arm_addon/armcc/arm/startup_same51.s"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="arm_addon/flash/ATSAME51_512.FLM"/>
+        <meta key="arm_addon/flash/ATSAME51_512.FLM" value="start=0x00000000|size=0x80000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_same51.c"/>
+        <includes pattern="gcc/startup_same51.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/same51j19a_flash.ld"/>
+        <includes pattern="gcc/same51j19a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_same51.c"/>
+        <includes pattern="iar/startup_same51.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/same51j19a_flash.icf"/>
+        <includes pattern="iar/same51j19a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/SAME/ATSAME51/ATSAME51J19A.i79"/>
+        <includes pattern="config/devices/Atmel/SAME/ATSAME51/ATSAME51J19A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAME51.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAME51J19A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="iar">
+        <includes pattern="config/flashloader/Atmel/same51j19a/same51j19a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/same51j19a/same51j19a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/same51j19a/same51j19a-flash.out"/>
+      </resource>
+    </resources>
+    <resources target="ATSAME51J20A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAME51J20A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAME51J20A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="same51.h"/>
+        <includes pattern="same51j20a.h"/>
+        <includes pattern="system_same51.h"/>
+        <includes pattern="pio/same51j20a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/cmcc.h"/>
+        <includes pattern="component/pdec.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/icm.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/pcc.h"/>
+        <includes pattern="component/sdhc.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/aes.h"/>
+        <includes pattern="component/i2s.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/ramecc.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/usb.h"/>
+        <includes pattern="component/trng.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/qspi.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="instance/tcc3.h"/>
+        <includes pattern="instance/sercom3.h"/>
+        <includes pattern="instance/ac.h"/>
+        <includes pattern="instance/osc32kctrl.h"/>
+        <includes pattern="instance/wdt.h"/>
+        <includes pattern="instance/sdhc1.h"/>
+        <includes pattern="instance/gclk.h"/>
+        <includes pattern="instance/tcc4.h"/>
+        <includes pattern="instance/tc4.h"/>
+        <includes pattern="instance/oscctrl.h"/>
+        <includes pattern="instance/supc.h"/>
+        <includes pattern="instance/cmcc.h"/>
+        <includes pattern="instance/tcc2.h"/>
+        <includes pattern="instance/pukcc.h"/>
+        <includes pattern="instance/pdec.h"/>
+        <includes pattern="instance/sdhc0.h"/>
+        <includes pattern="instance/sercom4.h"/>
+        <includes pattern="instance/rstc.h"/>
+        <includes pattern="instance/icm.h"/>
+        <includes pattern="instance/can0.h"/>
+        <includes pattern="instance/dac.h"/>
+        <includes pattern="instance/pm.h"/>
+        <includes pattern="instance/dsu.h"/>
+        <includes pattern="instance/pcc.h"/>
+        <includes pattern="instance/pac.h"/>
+        <includes pattern="instance/tc0.h"/>
+        <includes pattern="instance/tcc1.h"/>
+        <includes pattern="instance/tc5.h"/>
+        <includes pattern="instance/aes.h"/>
+        <includes pattern="instance/i2s.h"/>
+        <includes pattern="instance/sercom1.h"/>
+        <includes pattern="instance/tc1.h"/>
+        <includes pattern="instance/freqm.h"/>
+        <includes pattern="instance/ramecc.h"/>
+        <includes pattern="instance/can1.h"/>
+        <includes pattern="instance/evsys.h"/>
+        <includes pattern="instance/adc1.h"/>
+        <includes pattern="instance/sercom6.h"/>
+        <includes pattern="instance/sercom0.h"/>
+        <includes pattern="instance/ccl.h"/>
+        <includes pattern="instance/usb.h"/>
+        <includes pattern="instance/trng.h"/>
+        <includes pattern="instance/tcc0.h"/>
+        <includes pattern="instance/sercom2.h"/>
+        <includes pattern="instance/adc0.h"/>
+        <includes pattern="instance/sercom7.h"/>
+        <includes pattern="instance/qspi.h"/>
+        <includes pattern="instance/rtc.h"/>
+        <includes pattern="instance/tc7.h"/>
+        <includes pattern="instance/nvmctrl.h"/>
+        <includes pattern="instance/tc3.h"/>
+        <includes pattern="instance/port.h"/>
+        <includes pattern="instance/sercom5.h"/>
+        <includes pattern="instance/eic.h"/>
+        <includes pattern="instance/mclk.h"/>
+        <includes pattern="instance/tc6.h"/>
+        <includes pattern="instance/tc2.h"/>
+        <includes pattern="instance/dmac.h"/>
+        <includes pattern="instance/hmatrix.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAME51J20A__"/>
+      </resource>
+      <resource type="c.header.mcc" subdir="include_mcc">
+        <includes pattern="sam.h"/>
+        <includes pattern="same51j20a.h"/>
+        <includes pattern="system_same51.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/aes.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/cmcc.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/icm.h"/>
+        <includes pattern="component/i2s.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pcc.h"/>
+        <includes pattern="component/pdec.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/pukcc.h"/>
+        <includes pattern="component/qspi.h"/>
+        <includes pattern="component/ramecc.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdhc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/trng.h"/>
+        <includes pattern="component/usb.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="pio/same51j20a.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAME51J20A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_same51.c"/>
+        <includes pattern="gcc/startup_same51.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/same51j20a_flash.ld"/>
+        <includes pattern="gcc/same51j20a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_same51.c"/>
+        <includes pattern="iar/startup_same51.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/same51j20a_flash.icf"/>
+        <includes pattern="iar/same51j20a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/SAME/ATSAME51/ATSAME51J20A.i79"/>
+        <includes pattern="config/devices/Atmel/SAME/ATSAME51/ATSAME51J20A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAME51.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAME51J20A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="iar">
+        <includes pattern="config/flashloader/Atmel/same51j20a/same51j20a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/same51j20a/same51j20a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/same51j20a/same51j20a-flash.out"/>
+      </resource>
+    </resources>
+    <resources target="ATSAME51G19A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAME51G19A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAME51G19A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="same51.h"/>
+        <includes pattern="same51g19a.h"/>
+        <includes pattern="system_same51.h"/>
+        <includes pattern="pio/same51g19a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/cmcc.h"/>
+        <includes pattern="component/pdec.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/icm.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/pcc.h"/>
+        <includes pattern="component/sdhc.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/aes.h"/>
+        <includes pattern="component/i2s.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/ramecc.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/usb.h"/>
+        <includes pattern="component/trng.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/qspi.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="instance/tcc3.h"/>
+        <includes pattern="instance/sercom3.h"/>
+        <includes pattern="instance/ac.h"/>
+        <includes pattern="instance/osc32kctrl.h"/>
+        <includes pattern="instance/wdt.h"/>
+        <includes pattern="instance/sdhc1.h"/>
+        <includes pattern="instance/gclk.h"/>
+        <includes pattern="instance/tcc4.h"/>
+        <includes pattern="instance/tc4.h"/>
+        <includes pattern="instance/oscctrl.h"/>
+        <includes pattern="instance/supc.h"/>
+        <includes pattern="instance/cmcc.h"/>
+        <includes pattern="instance/tcc2.h"/>
+        <includes pattern="instance/pukcc.h"/>
+        <includes pattern="instance/pdec.h"/>
+        <includes pattern="instance/sdhc0.h"/>
+        <includes pattern="instance/sercom4.h"/>
+        <includes pattern="instance/rstc.h"/>
+        <includes pattern="instance/icm.h"/>
+        <includes pattern="instance/can0.h"/>
+        <includes pattern="instance/dac.h"/>
+        <includes pattern="instance/pm.h"/>
+        <includes pattern="instance/dsu.h"/>
+        <includes pattern="instance/pcc.h"/>
+        <includes pattern="instance/pac.h"/>
+        <includes pattern="instance/tc0.h"/>
+        <includes pattern="instance/tcc1.h"/>
+        <includes pattern="instance/tc5.h"/>
+        <includes pattern="instance/aes.h"/>
+        <includes pattern="instance/i2s.h"/>
+        <includes pattern="instance/sercom1.h"/>
+        <includes pattern="instance/tc1.h"/>
+        <includes pattern="instance/freqm.h"/>
+        <includes pattern="instance/ramecc.h"/>
+        <includes pattern="instance/can1.h"/>
+        <includes pattern="instance/evsys.h"/>
+        <includes pattern="instance/adc1.h"/>
+        <includes pattern="instance/sercom6.h"/>
+        <includes pattern="instance/sercom0.h"/>
+        <includes pattern="instance/ccl.h"/>
+        <includes pattern="instance/usb.h"/>
+        <includes pattern="instance/trng.h"/>
+        <includes pattern="instance/tcc0.h"/>
+        <includes pattern="instance/sercom2.h"/>
+        <includes pattern="instance/adc0.h"/>
+        <includes pattern="instance/sercom7.h"/>
+        <includes pattern="instance/qspi.h"/>
+        <includes pattern="instance/rtc.h"/>
+        <includes pattern="instance/tc7.h"/>
+        <includes pattern="instance/nvmctrl.h"/>
+        <includes pattern="instance/tc3.h"/>
+        <includes pattern="instance/port.h"/>
+        <includes pattern="instance/sercom5.h"/>
+        <includes pattern="instance/eic.h"/>
+        <includes pattern="instance/mclk.h"/>
+        <includes pattern="instance/tc6.h"/>
+        <includes pattern="instance/tc2.h"/>
+        <includes pattern="instance/dmac.h"/>
+        <includes pattern="instance/hmatrix.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAME51G19A__"/>
+      </resource>
+      <resource type="c.header.mcc" subdir="include_mcc">
+        <includes pattern="sam.h"/>
+        <includes pattern="same51g19a.h"/>
+        <includes pattern="system_same51.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/aes.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/cmcc.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/icm.h"/>
+        <includes pattern="component/i2s.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pcc.h"/>
+        <includes pattern="component/pdec.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/pukcc.h"/>
+        <includes pattern="component/qspi.h"/>
+        <includes pattern="component/ramecc.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdhc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/trng.h"/>
+        <includes pattern="component/usb.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="pio/same51g19a.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAME51G19A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_same51.c"/>
+        <includes pattern="gcc/startup_same51.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/same51g19a_flash.ld"/>
+        <includes pattern="gcc/same51g19a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_same51.c"/>
+        <includes pattern="iar/startup_same51.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/same51g19a_flash.icf"/>
+        <includes pattern="iar/same51g19a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/SAME/ATSAME51/ATSAME51G19A.i79"/>
+        <includes pattern="config/devices/Atmel/SAME/ATSAME51/ATSAME51G19A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAME51.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAME51G19A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="iar">
+        <includes pattern="config/flashloader/Atmel/same51g19a/same51g19a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/same51g19a/same51g19a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/same51g19a/same51g19a-flash.out"/>
+      </resource>
+    </resources>
+    <resources target="ATSAME51G18A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAME51G18A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAME51G18A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="same51.h"/>
+        <includes pattern="same51g18a.h"/>
+        <includes pattern="system_same51.h"/>
+        <includes pattern="pio/same51g18a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/cmcc.h"/>
+        <includes pattern="component/pdec.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/icm.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/pcc.h"/>
+        <includes pattern="component/sdhc.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/aes.h"/>
+        <includes pattern="component/i2s.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/ramecc.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/usb.h"/>
+        <includes pattern="component/trng.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/qspi.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="instance/tcc3.h"/>
+        <includes pattern="instance/sercom3.h"/>
+        <includes pattern="instance/ac.h"/>
+        <includes pattern="instance/osc32kctrl.h"/>
+        <includes pattern="instance/wdt.h"/>
+        <includes pattern="instance/sdhc1.h"/>
+        <includes pattern="instance/gclk.h"/>
+        <includes pattern="instance/tcc4.h"/>
+        <includes pattern="instance/tc4.h"/>
+        <includes pattern="instance/oscctrl.h"/>
+        <includes pattern="instance/supc.h"/>
+        <includes pattern="instance/cmcc.h"/>
+        <includes pattern="instance/tcc2.h"/>
+        <includes pattern="instance/pukcc.h"/>
+        <includes pattern="instance/pdec.h"/>
+        <includes pattern="instance/sdhc0.h"/>
+        <includes pattern="instance/sercom4.h"/>
+        <includes pattern="instance/rstc.h"/>
+        <includes pattern="instance/icm.h"/>
+        <includes pattern="instance/can0.h"/>
+        <includes pattern="instance/dac.h"/>
+        <includes pattern="instance/pm.h"/>
+        <includes pattern="instance/dsu.h"/>
+        <includes pattern="instance/pcc.h"/>
+        <includes pattern="instance/pac.h"/>
+        <includes pattern="instance/tc0.h"/>
+        <includes pattern="instance/tcc1.h"/>
+        <includes pattern="instance/tc5.h"/>
+        <includes pattern="instance/aes.h"/>
+        <includes pattern="instance/i2s.h"/>
+        <includes pattern="instance/sercom1.h"/>
+        <includes pattern="instance/tc1.h"/>
+        <includes pattern="instance/freqm.h"/>
+        <includes pattern="instance/ramecc.h"/>
+        <includes pattern="instance/can1.h"/>
+        <includes pattern="instance/evsys.h"/>
+        <includes pattern="instance/adc1.h"/>
+        <includes pattern="instance/sercom6.h"/>
+        <includes pattern="instance/sercom0.h"/>
+        <includes pattern="instance/ccl.h"/>
+        <includes pattern="instance/usb.h"/>
+        <includes pattern="instance/trng.h"/>
+        <includes pattern="instance/tcc0.h"/>
+        <includes pattern="instance/sercom2.h"/>
+        <includes pattern="instance/adc0.h"/>
+        <includes pattern="instance/sercom7.h"/>
+        <includes pattern="instance/qspi.h"/>
+        <includes pattern="instance/rtc.h"/>
+        <includes pattern="instance/tc7.h"/>
+        <includes pattern="instance/nvmctrl.h"/>
+        <includes pattern="instance/tc3.h"/>
+        <includes pattern="instance/port.h"/>
+        <includes pattern="instance/sercom5.h"/>
+        <includes pattern="instance/eic.h"/>
+        <includes pattern="instance/mclk.h"/>
+        <includes pattern="instance/tc6.h"/>
+        <includes pattern="instance/tc2.h"/>
+        <includes pattern="instance/dmac.h"/>
+        <includes pattern="instance/hmatrix.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAME51G18A__"/>
+      </resource>
+      <resource type="c.header.mcc" subdir="include_mcc">
+        <includes pattern="sam.h"/>
+        <includes pattern="same51g18a.h"/>
+        <includes pattern="system_same51.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/aes.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/cmcc.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/icm.h"/>
+        <includes pattern="component/i2s.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pcc.h"/>
+        <includes pattern="component/pdec.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/pukcc.h"/>
+        <includes pattern="component/qspi.h"/>
+        <includes pattern="component/ramecc.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdhc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/trng.h"/>
+        <includes pattern="component/usb.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="pio/same51g18a.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAME51G18A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_same51.c"/>
+        <includes pattern="gcc/startup_same51.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/same51g18a_flash.ld"/>
+        <includes pattern="gcc/same51g18a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_same51.c"/>
+        <includes pattern="iar/startup_same51.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/same51g18a_flash.icf"/>
+        <includes pattern="iar/same51g18a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/SAME/ATSAME51/ATSAME51G18A.i79"/>
+        <includes pattern="config/devices/Atmel/SAME/ATSAME51/ATSAME51G18A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAME51.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAME51G18A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="iar">
+        <includes pattern="config/flashloader/Atmel/same51g18a/same51g18a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/same51g18a/same51g18a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/same51g18a/same51g18a-flash.out"/>
+      </resource>
+    </resources>
+    <resources target="ATSAME51N19A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAME51N19A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAME51N19A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="same51.h"/>
+        <includes pattern="same51n19a.h"/>
+        <includes pattern="system_same51.h"/>
+        <includes pattern="pio/same51n19a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/cmcc.h"/>
+        <includes pattern="component/pdec.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/icm.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/pcc.h"/>
+        <includes pattern="component/sdhc.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/aes.h"/>
+        <includes pattern="component/i2s.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/ramecc.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/usb.h"/>
+        <includes pattern="component/trng.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/qspi.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="instance/tcc3.h"/>
+        <includes pattern="instance/sercom3.h"/>
+        <includes pattern="instance/ac.h"/>
+        <includes pattern="instance/osc32kctrl.h"/>
+        <includes pattern="instance/wdt.h"/>
+        <includes pattern="instance/sdhc1.h"/>
+        <includes pattern="instance/gclk.h"/>
+        <includes pattern="instance/tcc4.h"/>
+        <includes pattern="instance/tc4.h"/>
+        <includes pattern="instance/oscctrl.h"/>
+        <includes pattern="instance/supc.h"/>
+        <includes pattern="instance/cmcc.h"/>
+        <includes pattern="instance/tcc2.h"/>
+        <includes pattern="instance/pukcc.h"/>
+        <includes pattern="instance/pdec.h"/>
+        <includes pattern="instance/sdhc0.h"/>
+        <includes pattern="instance/sercom4.h"/>
+        <includes pattern="instance/rstc.h"/>
+        <includes pattern="instance/icm.h"/>
+        <includes pattern="instance/can0.h"/>
+        <includes pattern="instance/dac.h"/>
+        <includes pattern="instance/pm.h"/>
+        <includes pattern="instance/dsu.h"/>
+        <includes pattern="instance/pcc.h"/>
+        <includes pattern="instance/pac.h"/>
+        <includes pattern="instance/tc0.h"/>
+        <includes pattern="instance/tcc1.h"/>
+        <includes pattern="instance/tc5.h"/>
+        <includes pattern="instance/aes.h"/>
+        <includes pattern="instance/i2s.h"/>
+        <includes pattern="instance/sercom1.h"/>
+        <includes pattern="instance/tc1.h"/>
+        <includes pattern="instance/freqm.h"/>
+        <includes pattern="instance/ramecc.h"/>
+        <includes pattern="instance/can1.h"/>
+        <includes pattern="instance/evsys.h"/>
+        <includes pattern="instance/adc1.h"/>
+        <includes pattern="instance/sercom6.h"/>
+        <includes pattern="instance/sercom0.h"/>
+        <includes pattern="instance/ccl.h"/>
+        <includes pattern="instance/usb.h"/>
+        <includes pattern="instance/trng.h"/>
+        <includes pattern="instance/tcc0.h"/>
+        <includes pattern="instance/sercom2.h"/>
+        <includes pattern="instance/adc0.h"/>
+        <includes pattern="instance/sercom7.h"/>
+        <includes pattern="instance/qspi.h"/>
+        <includes pattern="instance/rtc.h"/>
+        <includes pattern="instance/tc7.h"/>
+        <includes pattern="instance/nvmctrl.h"/>
+        <includes pattern="instance/tc3.h"/>
+        <includes pattern="instance/port.h"/>
+        <includes pattern="instance/sercom5.h"/>
+        <includes pattern="instance/eic.h"/>
+        <includes pattern="instance/mclk.h"/>
+        <includes pattern="instance/tc6.h"/>
+        <includes pattern="instance/tc2.h"/>
+        <includes pattern="instance/dmac.h"/>
+        <includes pattern="instance/hmatrix.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAME51N19A__"/>
+      </resource>
+      <resource type="c.header.mcc" subdir="include_mcc">
+        <includes pattern="sam.h"/>
+        <includes pattern="same51n19a.h"/>
+        <includes pattern="system_same51.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/aes.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/cmcc.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/icm.h"/>
+        <includes pattern="component/i2s.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pcc.h"/>
+        <includes pattern="component/pdec.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/pukcc.h"/>
+        <includes pattern="component/qspi.h"/>
+        <includes pattern="component/ramecc.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdhc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/trng.h"/>
+        <includes pattern="component/usb.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="pio/same51n19a.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAME51N19A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="arm_addon/armcc/system_same51.c"/>
+        <includes pattern="arm_addon/armcc/arm/startup_same51.s"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="arm_addon/flash/ATSAME51_512.FLM"/>
+        <meta key="arm_addon/flash/ATSAME51_512.FLM" value="start=0x00000000|size=0x80000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_same51.c"/>
+        <includes pattern="gcc/startup_same51.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/same51n19a_flash.ld"/>
+        <includes pattern="gcc/same51n19a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_same51.c"/>
+        <includes pattern="iar/startup_same51.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/same51n19a_flash.icf"/>
+        <includes pattern="iar/same51n19a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/SAME/ATSAME51/ATSAME51N19A.i79"/>
+        <includes pattern="config/devices/Atmel/SAME/ATSAME51/ATSAME51N19A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAME51.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAME51N19A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="iar">
+        <includes pattern="config/flashloader/Atmel/same51n19a/same51n19a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/same51n19a/same51n19a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/same51n19a/same51n19a-flash.out"/>
+      </resource>
+    </resources>
+    <resources target="ATSAME51N20A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAME51N20A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAME51N20A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="same51.h"/>
+        <includes pattern="same51n20a.h"/>
+        <includes pattern="system_same51.h"/>
+        <includes pattern="pio/same51n20a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/cmcc.h"/>
+        <includes pattern="component/pdec.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/icm.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/pcc.h"/>
+        <includes pattern="component/sdhc.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/aes.h"/>
+        <includes pattern="component/i2s.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/ramecc.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/usb.h"/>
+        <includes pattern="component/trng.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/qspi.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="instance/tcc3.h"/>
+        <includes pattern="instance/sercom3.h"/>
+        <includes pattern="instance/ac.h"/>
+        <includes pattern="instance/osc32kctrl.h"/>
+        <includes pattern="instance/wdt.h"/>
+        <includes pattern="instance/sdhc1.h"/>
+        <includes pattern="instance/gclk.h"/>
+        <includes pattern="instance/tcc4.h"/>
+        <includes pattern="instance/tc4.h"/>
+        <includes pattern="instance/oscctrl.h"/>
+        <includes pattern="instance/supc.h"/>
+        <includes pattern="instance/cmcc.h"/>
+        <includes pattern="instance/tcc2.h"/>
+        <includes pattern="instance/pukcc.h"/>
+        <includes pattern="instance/pdec.h"/>
+        <includes pattern="instance/sdhc0.h"/>
+        <includes pattern="instance/sercom4.h"/>
+        <includes pattern="instance/rstc.h"/>
+        <includes pattern="instance/icm.h"/>
+        <includes pattern="instance/can0.h"/>
+        <includes pattern="instance/dac.h"/>
+        <includes pattern="instance/pm.h"/>
+        <includes pattern="instance/dsu.h"/>
+        <includes pattern="instance/pcc.h"/>
+        <includes pattern="instance/pac.h"/>
+        <includes pattern="instance/tc0.h"/>
+        <includes pattern="instance/tcc1.h"/>
+        <includes pattern="instance/tc5.h"/>
+        <includes pattern="instance/aes.h"/>
+        <includes pattern="instance/i2s.h"/>
+        <includes pattern="instance/sercom1.h"/>
+        <includes pattern="instance/tc1.h"/>
+        <includes pattern="instance/freqm.h"/>
+        <includes pattern="instance/ramecc.h"/>
+        <includes pattern="instance/can1.h"/>
+        <includes pattern="instance/evsys.h"/>
+        <includes pattern="instance/adc1.h"/>
+        <includes pattern="instance/sercom6.h"/>
+        <includes pattern="instance/sercom0.h"/>
+        <includes pattern="instance/ccl.h"/>
+        <includes pattern="instance/usb.h"/>
+        <includes pattern="instance/trng.h"/>
+        <includes pattern="instance/tcc0.h"/>
+        <includes pattern="instance/sercom2.h"/>
+        <includes pattern="instance/adc0.h"/>
+        <includes pattern="instance/sercom7.h"/>
+        <includes pattern="instance/qspi.h"/>
+        <includes pattern="instance/rtc.h"/>
+        <includes pattern="instance/tc7.h"/>
+        <includes pattern="instance/nvmctrl.h"/>
+        <includes pattern="instance/tc3.h"/>
+        <includes pattern="instance/port.h"/>
+        <includes pattern="instance/sercom5.h"/>
+        <includes pattern="instance/eic.h"/>
+        <includes pattern="instance/mclk.h"/>
+        <includes pattern="instance/tc6.h"/>
+        <includes pattern="instance/tc2.h"/>
+        <includes pattern="instance/dmac.h"/>
+        <includes pattern="instance/hmatrix.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAME51N20A__"/>
+      </resource>
+      <resource type="c.header.mcc" subdir="include_mcc">
+        <includes pattern="sam.h"/>
+        <includes pattern="same51n20a.h"/>
+        <includes pattern="system_same51.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/aes.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/cmcc.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/icm.h"/>
+        <includes pattern="component/i2s.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pcc.h"/>
+        <includes pattern="component/pdec.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/pukcc.h"/>
+        <includes pattern="component/qspi.h"/>
+        <includes pattern="component/ramecc.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdhc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/trng.h"/>
+        <includes pattern="component/usb.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="pio/same51n20a.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAME51N20A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="arm_addon/armcc/system_same51.c"/>
+        <includes pattern="arm_addon/armcc/arm/startup_same51.s"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="arm_addon/flash/ATSAME51_1024.FLM"/>
+        <meta key="arm_addon/flash/ATSAME51_1024.FLM" value="start=0x00000000|size=0x100000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_same51.c"/>
+        <includes pattern="gcc/startup_same51.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/same51n20a_flash.ld"/>
+        <includes pattern="gcc/same51n20a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_same51.c"/>
+        <includes pattern="iar/startup_same51.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/same51n20a_flash.icf"/>
+        <includes pattern="iar/same51n20a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/SAME/ATSAME51/ATSAME51N20A.i79"/>
+        <includes pattern="config/devices/Atmel/SAME/ATSAME51/ATSAME51N20A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAME51.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAME51N20A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="iar">
+        <includes pattern="config/flashloader/Atmel/same51n20a/same51n20a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/same51n20a/same51n20a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/same51n20a/same51n20a-flash.out"/>
+      </resource>
+    </resources>
+    <resources target="ATSAME51J18A">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATSAME51J18A.atdf"/>
+      </resource>
+      <resource type="svd" subdir="svd">
+        <includes pattern="ATSAME51J18A.svd"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="sam.h"/>
+        <includes pattern="same51.h"/>
+        <includes pattern="same51j18a.h"/>
+        <includes pattern="system_same51.h"/>
+        <includes pattern="pio/same51j18a.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/cmcc.h"/>
+        <includes pattern="component/pdec.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/icm.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/pcc.h"/>
+        <includes pattern="component/sdhc.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/aes.h"/>
+        <includes pattern="component/i2s.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/ramecc.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/usb.h"/>
+        <includes pattern="component/trng.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/qspi.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="instance/tcc3.h"/>
+        <includes pattern="instance/sercom3.h"/>
+        <includes pattern="instance/ac.h"/>
+        <includes pattern="instance/osc32kctrl.h"/>
+        <includes pattern="instance/wdt.h"/>
+        <includes pattern="instance/sdhc1.h"/>
+        <includes pattern="instance/gclk.h"/>
+        <includes pattern="instance/tcc4.h"/>
+        <includes pattern="instance/tc4.h"/>
+        <includes pattern="instance/oscctrl.h"/>
+        <includes pattern="instance/supc.h"/>
+        <includes pattern="instance/cmcc.h"/>
+        <includes pattern="instance/tcc2.h"/>
+        <includes pattern="instance/pukcc.h"/>
+        <includes pattern="instance/pdec.h"/>
+        <includes pattern="instance/sdhc0.h"/>
+        <includes pattern="instance/sercom4.h"/>
+        <includes pattern="instance/rstc.h"/>
+        <includes pattern="instance/icm.h"/>
+        <includes pattern="instance/can0.h"/>
+        <includes pattern="instance/dac.h"/>
+        <includes pattern="instance/pm.h"/>
+        <includes pattern="instance/dsu.h"/>
+        <includes pattern="instance/pcc.h"/>
+        <includes pattern="instance/pac.h"/>
+        <includes pattern="instance/tc0.h"/>
+        <includes pattern="instance/tcc1.h"/>
+        <includes pattern="instance/tc5.h"/>
+        <includes pattern="instance/aes.h"/>
+        <includes pattern="instance/i2s.h"/>
+        <includes pattern="instance/sercom1.h"/>
+        <includes pattern="instance/tc1.h"/>
+        <includes pattern="instance/freqm.h"/>
+        <includes pattern="instance/ramecc.h"/>
+        <includes pattern="instance/can1.h"/>
+        <includes pattern="instance/evsys.h"/>
+        <includes pattern="instance/adc1.h"/>
+        <includes pattern="instance/sercom6.h"/>
+        <includes pattern="instance/sercom0.h"/>
+        <includes pattern="instance/ccl.h"/>
+        <includes pattern="instance/usb.h"/>
+        <includes pattern="instance/trng.h"/>
+        <includes pattern="instance/tcc0.h"/>
+        <includes pattern="instance/sercom2.h"/>
+        <includes pattern="instance/adc0.h"/>
+        <includes pattern="instance/sercom7.h"/>
+        <includes pattern="instance/qspi.h"/>
+        <includes pattern="instance/rtc.h"/>
+        <includes pattern="instance/tc7.h"/>
+        <includes pattern="instance/nvmctrl.h"/>
+        <includes pattern="instance/tc3.h"/>
+        <includes pattern="instance/port.h"/>
+        <includes pattern="instance/sercom5.h"/>
+        <includes pattern="instance/eic.h"/>
+        <includes pattern="instance/mclk.h"/>
+        <includes pattern="instance/tc6.h"/>
+        <includes pattern="instance/tc2.h"/>
+        <includes pattern="instance/dmac.h"/>
+        <includes pattern="instance/hmatrix.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAME51J18A__"/>
+      </resource>
+      <resource type="c.header.mcc" subdir="include_mcc">
+        <includes pattern="sam.h"/>
+        <includes pattern="same51j18a.h"/>
+        <includes pattern="system_same51.h"/>
+        <includes pattern="component/ac.h"/>
+        <includes pattern="component/adc.h"/>
+        <includes pattern="component/aes.h"/>
+        <includes pattern="component/can.h"/>
+        <includes pattern="component/ccl.h"/>
+        <includes pattern="component/cmcc.h"/>
+        <includes pattern="component/dac.h"/>
+        <includes pattern="component/dmac.h"/>
+        <includes pattern="component/dsu.h"/>
+        <includes pattern="component/eic.h"/>
+        <includes pattern="component/evsys.h"/>
+        <includes pattern="component/freqm.h"/>
+        <includes pattern="component/gclk.h"/>
+        <includes pattern="component/hmatrixb.h"/>
+        <includes pattern="component/icm.h"/>
+        <includes pattern="component/i2s.h"/>
+        <includes pattern="component/mclk.h"/>
+        <includes pattern="component/nvmctrl.h"/>
+        <includes pattern="component/oscctrl.h"/>
+        <includes pattern="component/osc32kctrl.h"/>
+        <includes pattern="component/pac.h"/>
+        <includes pattern="component/pcc.h"/>
+        <includes pattern="component/pdec.h"/>
+        <includes pattern="component/pm.h"/>
+        <includes pattern="component/port.h"/>
+        <includes pattern="component/pukcc.h"/>
+        <includes pattern="component/qspi.h"/>
+        <includes pattern="component/ramecc.h"/>
+        <includes pattern="component/rstc.h"/>
+        <includes pattern="component/rtc.h"/>
+        <includes pattern="component/sdhc.h"/>
+        <includes pattern="component/sercom.h"/>
+        <includes pattern="component/supc.h"/>
+        <includes pattern="component/tc.h"/>
+        <includes pattern="component/tcc.h"/>
+        <includes pattern="component/trng.h"/>
+        <includes pattern="component/usb.h"/>
+        <includes pattern="component/wdt.h"/>
+        <includes pattern="pio/same51j18a.h"/>
+        <includes pattern="component-version.h"/>
+        <meta key="define" value="__SAME51J18A__"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="armcc.source.startup" subdir="armcc">
+        <includes pattern="arm_addon/armcc/system_same51.c"/>
+        <includes pattern="arm_addon/armcc/arm/startup_same51.s"/>
+      </resource>
+      <resource type="keil.flashloader" subdir="keil">
+        <includes pattern="arm_addon/flash/ATSAME51_256.FLM"/>
+        <meta key="arm_addon/flash/ATSAME51_256.FLM" value="start=0x00000000|size=0x40000|default=1"/>
+      </resource>
+      <resource type="gcc.source.startup" subdir="gcc">
+        <includes pattern="system_same51.c"/>
+        <includes pattern="gcc/startup_same51.c"/>
+      </resource>
+      <resource type="gcc.linker" subdir="gcc">
+        <includes pattern="gcc/same51j18a_flash.ld"/>
+        <includes pattern="gcc/same51j18a_sram.ld"/>
+      </resource>
+      <resource type="iar.source.startup" subdir="iar">
+        <includes pattern="system_same51.c"/>
+        <includes pattern="iar/startup_same51.c"/>
+      </resource>
+      <resource type="iar.linker" subdir="iar">
+        <includes pattern="iar/same51j18a_flash.icf"/>
+        <includes pattern="iar/same51j18a_sram.icf"/>
+      </resource>
+      <resource type="iar.config" subdir="iar">
+        <includes pattern="config/devices/Atmel/SAME/ATSAME51/ATSAME51J18A.i79"/>
+        <includes pattern="config/devices/Atmel/SAME/ATSAME51/ATSAME51J18A.menu"/>
+        <includes optional="true" pattern="config/debugger/Atmel/Trace_SAME51.dmac"/>
+        <includes optional="true" pattern="config/debugger/Atmel/ATSAME51J18A.ddf"/>
+      </resource>
+      <resource type="iar.flashloader" subdir="iar">
+        <includes pattern="config/flashloader/Atmel/same51j18a/same51j18a-flash.board"/>
+        <includes pattern="config/flashloader/Atmel/same51j18a/same51j18a-flash.flash"/>
+        <includes pattern="config/flashloader/Atmel/same51j18a/same51j18a-flash.out"/>
+      </resource>
+    </resources>
+  </content>
+  <pdsc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" vendor="Atmel">
+		<releases>
+			<release version="1.1.BUILDNUMBER">Support for ATSAME51G18A and ATSAME51G19A</release>
+			<release version="1.1.129" date="2019-04-09">Fix: Modes in SVD, Value-group for USER_FUSES, define in GCLK. Added python programming and debugging scripts for MPLAB X.</release>
+			<release version="1.0.85">Added ATSAME51J20A. Aligned PTC signal description with other SAM DFPs.</release>
+			<release version="1.0.56">Initial version.</release>
+		</releases>
+	</pdsc>
+</package>
