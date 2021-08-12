@@ -136,3 +136,19 @@
    initial_BLUE: 0.4
    ```
    <img src=Images/cfg_mini12864.png/><br/>
+
+### BigTreeTtech TFT TouchSCreen emulated 12864 mode: Set the `display` in `printer.cfg` to the following parameters
+   ```
+   [display]
+   lcd_type: emulated_st7920
+   spi_software_miso_pin: PA6
+   spi_software_mosi_pin: EXP1_3
+   spi_software_sclk_pin: EXP1_5
+   en_pin: EXP1_4
+   encoder_pins: ^EXP2_5, ^EXP2_3
+   click_pin: ^!EXP1_2
+
+   [output_pin beeper]
+   pin: EXP1_1
+   ```
+   <img src=Images/cfg_tft_emulated_12864.png/><br/>

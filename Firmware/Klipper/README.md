@@ -55,7 +55,7 @@
 2. Refer to [klipper's official installation](https://www.klipper3d.org/Installation.html) to `Configuring Klipper`. And use the configuration file [Octopus klipper.cfg](https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-V1.0/blob/master/Firmware/Klipper/Octopus%20klipper.cfg) as the underlying `printer.cfg`, which includes all the correct pinout for Octopus
 3. Refer to [klipper's official Config_Reference](https://www.klipper3d.org/Config_Reference.html) to configure the features you want.
 4. If you use USB to communicate with raspberry pi, run the `ls /dev/serial/by-id/*` command in raspberry pi to get the correct ID number of the motherboard, and set the correct ID number in `printer.cfg`. And wiring reference [here](#raspberry-pi-is-powered-by-an-external-5v-adapter-and-communicates-with-the-motherboard-via-usb)
-    ``` 
+    ```
     [mcu]
     serial: /dev/serial/by-id/usb-Klipper_stm32f446xx_0E002B00135053424E363620-if00
     ```
@@ -64,7 +64,7 @@
    * Remove `console=serial0,115200` in `/boot/cmdline.txt`
    * Add `dtoverlay=pi3-miniuart-bt` at the end of file `/boot/config.txt`
    * Modify the configuration of `[mcu]` in `printer.cfg` to `serial: /dev/ttyAMA0` and enable `restart_method: command` by SSH
-     ``` 
+     ```
      [mcu]
      serial: /dev/ttyAMA0
      restart_method: command
@@ -72,7 +72,7 @@
      <img src=Images/cfg_uart.png/><br/>
 
 ### LCD12864 (RepRapDiscount 128x64 Full Graphic Smart Controller): Set the `display` in `printer.cfg` to the following parameters
-   ``` 
+   ```
    [display]
    lcd_type: st7920
    cs_pin: EXP1_4
@@ -88,7 +88,7 @@
    <img src=Images/cfg_lcd12864.png/><br/>
 
 ### LCD2004 (RepRapDiscount 2004 Smart Controller): Set the `display` in `printer.cfg` to the following parameters
-   ``` 
+   ```
    [display]
    lcd_type: hd44780
    rs_pin: EXP1_4
@@ -107,7 +107,7 @@
    <img src=Images/cfg_lcd2004.png/><br/>
 
 ### Mini12864 (Mini 12864Panel with neopixel backlight leds): Set the `display` in `printer.cfg` to the following parameters
-   ```    
+   ```
    [display]
    lcd_type: uc1701
    cs_pin: EXP1_3
@@ -135,3 +135,19 @@
    initial_BLUE: 0.4
    ```
    <img src=Images/cfg_mini12864.png/><br/>
+
+### BigTreeTtech TFT TouchSCreen emulated 12864 mode: Set the `display` in `printer.cfg` to the following parameters
+   ```
+   [display]
+   lcd_type: emulated_st7920
+   spi_software_miso_pin: PA6
+   spi_software_mosi_pin: EXP1_3
+   spi_software_sclk_pin: EXP1_5
+   en_pin: EXP1_4
+   encoder_pins: ^EXP2_5, ^EXP2_3
+   click_pin: ^!EXP1_2
+
+   [output_pin beeper]
+   pin: EXP1_1
+   ```
+   <img src=Images/cfg_tft_emulated_12864.png/><br/>
