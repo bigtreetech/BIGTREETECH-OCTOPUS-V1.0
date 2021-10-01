@@ -443,6 +443,13 @@
     #undef BOARD_ST7920_DELAY_2
     #undef BOARD_ST7920_DELAY_3
 
+   #elif ENABLED(MKS_MINI_12864)  //quick fix for allowing use of MKS12864A/B and MKS_MINI_12864 LCD. See issue #70. Credits for the original work to @Gleb1982
+
+    #define DOGLCD_A0                EXP1_04_PIN
+    #define DOGLCD_CS                EXP1_05_PIN
+    #define BTN_EN1                  EXP2_08_PIN
+    #define BTN_EN2                  EXP2_06_PIN
+
   #else
 
     #define LCD_PINS_RS              EXP1_07_PIN
