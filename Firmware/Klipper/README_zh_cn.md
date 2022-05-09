@@ -36,14 +36,14 @@
    * [firmware-F429-USART2.bin](./firmware-F429-USART2.bin) 使用 USART2 与树莓派通信. 通过杜邦线将树莓派的 UART-TX 接到主板的 USART-RX2 ，将树莓派的 UART-RX 接到主板的 USART-TX2 ，并且将地线连接在一起即可正常通信。
 
 3. 自行编译最新版本的固件<br/>
-   ***注意: 请注意区分主板上MCU的类型是 `STM32F446 + 12 MHz crystal` 还是 `STM32F429 + 8 MHz crystal`***
+   ***注意: 请注意区分主板上MCU的类型是 `STM32F446 + 12 MHz crystal`、 `STM32F429 + 8 MHz crystal` 还是 `STM32F407 + 8 MHz crystal`***
    1. 参考 [klipper官方的安装说明](https://www.klipper3d.org/Installation.html) 下载klipper源码到树莓派
    2. 使用下面的配置去编译固件
       * [*] Enable extra low-level configuration options
       * Micro-controller Architecture = `STMicroelectronics STM32`
-      * Processor model = `STM32F446` 或者 `STM32F429` (取决于主板实际的 MCU 类型)
+      * Processor model = `STM32F446`、`STM32F429` 或者 `STM32F407` (取决于主板实际的 MCU 类型)
       * Bootloader offset = `32KiB bootloader`
-      * Clock Reference = `12 MHz crystal`(`STM32F446`使用 12MHz) or `8 MHz crystal`(`STM32F429`使用 8MHz)
+      * Clock Reference = `12 MHz crystal`(`STM32F446`使用 12MHz) or `8 MHz crystal`(`STM32F429` 和 `STM32F407` 使用 8MHz)
       * 如果使用 USB 与树莓派通信
          * Communication interface = `USB (on PA11/PA12)`
       * 如果使用 USART2 与树莓派通信
@@ -53,6 +53,7 @@
 
       <img src=Images/octopus_f446_klipper_menuconfig.png width="800" /><br/>
       <img src=Images/octopus_f429_klipper_menuconfig.png width="800" /><br/>
+      <img src=Images/octopus_f407_klipper_menuconfig.png width="800" /><br/>
    3. 配置选择完成后, 输入 `q` 退出配置界面，当询问是否保存配置是选择 "Yes" .
    4. 输入 `make` 命令开始编译固件
    5. 当 `make` 命令执行完成后，会在树莓派的`home/pi/kliiper/out`的文件夹中生成我们所需要的`klipper.bin`固件。你可以在CMD命令行终端中通过`pscp`命令把`klipper.bin`固件复制到与树莓派在同一个局域网下的电脑上。例如 `pscp -C pi@192.168.0.101:/home/pi/klipper/out/klipper.bin c:\klipper.bin`(命令行会提示 `The server's host key is not cached` 并且询问 `Store key in cache?((y/n)`, 输入 `y` 保存 host key，然后输入树莓派默认的密码：`raspberry`)
