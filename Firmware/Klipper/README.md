@@ -37,14 +37,14 @@
    * [firmware-F429-USART2.bin](./firmware-F429-USART2.bin) Use USART2 to communicate with raspberry pi. Connect the UART-TX of raspberry pi with the USART-RX2 of motherboard and connect the UART-RX of raspberry pi with the USART-TX2 of motherboard directly to communicate normally.
 
 3. Build your own firmware<br/>
-   ***NOTE: Pay attention to distinguish the type of MCU on your motherboard, `STM32F446 + 12 MHz crystal`， `STM32F429 + 8 MHz crystal` or `STM32F407 + 8 MHz crystal`***
+   ***NOTE: Pay attention to distinguish the type of MCU on your motherboard, `STM32F446 + 12 MHz crystal + 32KiB bootloader`， `STM32F429 + 8 MHz crystal + 32KiB bootloader`, `STM32F407 + 8 MHz crystal + 32KiB bootloader` or  `STM32FH723 + 25 MHz crystal + 128KiB bootloader`***
    1. Refer to [klipper's official installation](https://www.klipper3d.org/Installation.html) to download klipper source code to raspberry pi
    2. `Building the micro-controller` with the configuration shown below.
       * [*] Enable extra low-level configuration options
       * Micro-controller Architecture = `STMicroelectronics STM32`
-      * Processor model = `STM32F446`, `STM32F429` or `STM32F407` (Depends on the MCU of your motherboard)
-      * Bootloader offset = `32KiB bootloader`
-      * Clock Reference = `12 MHz crystal`(for `STM32F446`) or `8 MHz crystal`(for `STM32F429` & `STM32F407`)
+      * Processor model = `STM32F446`, `STM32F429`, `STM32F407` or `STM32H723` (Depends on the MCU of your motherboard)
+      * Bootloader offset = `32KiB bootloader`(for `STM32F446`, `STM32F429` & `STM32F407`) or `128KiB bootloader`(for `STM32H723`)
+      * Clock Reference = `12 MHz crystal`(for `STM32F446`), `8 MHz crystal`(for `STM32F429` & `STM32F407`) or `25 MHz crystal`(for `STM32H723`)
       * IF USE USB
          * Communication interface = `USB (on PA11/PA12)`
       * ElSE IF USE USART2
@@ -55,6 +55,7 @@
       <img src=Images/octopus_f446_klipper_menuconfig.png width="800" /><br/>
       <img src=Images/octopus_f429_klipper_menuconfig.png width="800" /><br/>
       <img src=Images/octopus_f407_klipper_menuconfig.png width="800" /><br/>
+      <img src=Images/octopus_h723_klipper_menuconfig.png width="800" /><br/>
    3. Once the configuration is selected, press `q` to exit,  and "Yes" when  asked to save the configuration.
    4. Run the command `make`
    5. The `klipper.bin` file will be generated in the folder `home/pi/kliiper/out` when the `make` command completed. And you can use the windows computer under the same LAN as raspberry pi to copy `klipper.bin` from raspberry pi to the computer with `pscp` command in the CMD terminal. such as `pscp -C pi@192.168.0.101:/home/pi/klipper/out/klipper.bin c:\klipper.bin`(The terminal may prompt that `The server's host key is not cached` and ask `Store key in cache?((y/n)`, Please type `y` to store. And then it will ask for a password, please type the default password `raspberry` for raspberry pi)
