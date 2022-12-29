@@ -57,7 +57,7 @@
       <img src=Images/octopus_f429_klipper_menuconfig.png width="800" /><br/>
    3. Once the configuration is selected, press `q` to exit,  and "Yes" when  asked to save the configuration.
    4. Run the command `make`
-   5. The `klipper.bin` file will be generated in the folder `home/pi/kliiper/out` when the `make` command completed. And you can use the windows computer under the same LAN as raspberry pi to copy `klipper.bin` from raspberry pi to the computer with `pscp` command in the CMD terminal. such as `pscp -C pi@192.168.0.101:/home/pi/klipper/out/klipper.bin c:\klipper.bin`(The terminal may prompt that `The server's host key is not cached` and ask `Store key in cache?((y/n)`, Please type `y` to store. And then it will ask for a password, please type the default password `raspberry` for raspberry pi)
+   5. The `klipper.bin` file will be generated in the folder `home/pi/klipper/out` when the `make` command completed. And you can use the windows computer under the same LAN as raspberry pi to copy `klipper.bin` from raspberry pi to the computer with `pscp` command in the CMD terminal. such as `pscp -C pi@192.168.0.101:/home/pi/klipper/out/klipper.bin c:\klipper.bin`(The terminal may prompt that `The server's host key is not cached` and ask `Store key in cache?((y/n)`, Please type `y` to store. And then it will ask for a password, please type the default password `raspberry` for raspberry pi)
 
 ## Firmware Installation
 ### Option 1: DFU Firmware Install
@@ -85,7 +85,7 @@
 * Requires a microSD card
 
 1. You can use the method in [Build Firmware Image 3.5](#build-firmware-image) or use a tool such as `cyberduck` or `winscp` to copy the `klipper.bin` file from your pi to your computer.
-2. Renamed the `firmware-F4xx-USB.bin`, `firmware-F4xx-USART2.bin` or the `klipper.bin`(in folder `home/pi/kliiper/out` build by yourself) to `firmware.bin`<br/>
+2. Renamed the `firmware-F4xx-USB.bin`, `firmware-F4xx-USART2.bin` or the `klipper.bin`(in folder `home/pi/klipper/out` build by yourself) to `firmware.bin`<br/>
 **Important:** If the file is not renamed, the bootloader will not be updated properly.
 3. Copy the `firmware.bin` to the root directory of SD card (make sure SD card is in FAT32 format)
 4. power off the Octopus
