@@ -190,7 +190,9 @@
 
 #define Z2_STEP_PIN                         PG4   // MOTOR 3
 #define Z2_DIR_PIN                          PC1
-#define Z2_ENABLE_PIN                       PA0
+#ifndef Z2_ENABLE_PIN
+  #define Z2_ENABLE_PIN                     PA0
+#endif
 #ifndef Z2_CS_PIN
   #define Z2_CS_PIN                         PC7
 #endif
@@ -236,9 +238,13 @@
 // Heaters / Fans
 //
 #define HEATER_BED_PIN                      PA1   // Hotbed
-#define HEATER_0_PIN                        PA2   // Heater0
+#ifndef HEATER_0_PIN
+  #define HEATER_0_PIN                      PA2   // Heater0
+#endif
 #define HEATER_1_PIN                        PA3   // Heater1
-#define HEATER_2_PIN                        PB10  // Heater2
+#ifndef HEATER_2_PIN
+  #define HEATER_2_PIN                      PB10  // Heater2
+#endif
 #define HEATER_3_PIN                        PB11  // Heater3
 
 #define FAN_PIN                             PA8   // Fan0
